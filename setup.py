@@ -9,17 +9,15 @@ from shutil import rmtree
 from setuptools import find_packages, setup, Command
 
 # Package meta-data.
-NAME = 'hseling-api-template'
-DESCRIPTION = 'HSE Linguistics API Template.'
-URL = 'https://github.com/hseling/hseling-api-template'
+NAME = 'hseling-api-direct-speech'
+DESCRIPTION = 'HSE Linguistics API: Direct Speech'
+URL = 'https://github.com/hseling/hseling-api-direct-speech'
 EMAIL = 'ssobko@hse.ru'
 AUTHOR = 'Sergey Sobko'
 REQUIRES_PYTHON = '>=3.6.0'
 VERSION = '1.0.0'
 
-REQUIRED = [
-    'requests', 'lxml', 'html5lib', 'beautifulsoup4', 'scrapy'
-]
+REQUIRED = []
 
 EXTRAS = {}
 
