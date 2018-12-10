@@ -48,10 +48,12 @@ setup(
     author_email=EMAIL,
     python_requires=REQUIRES_PYTHON,
     url=URL,
-    packages=find_packages(exclude=('tests', 'app')),
+    packages=find_packages(exclude=('tests', 'app', 'nltk_data')),
+    package_data={
+      'hseling_api_direct_speech': ['csv_files/*.csv'],
+   },
     install_requires=REQUIRED,
     extras_require=EXTRAS,
-    include_package_data=True,
     license='MIT',
     classifiers=[
         'License :: OSI Approved :: MIT License',

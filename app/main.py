@@ -1,13 +1,14 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, send_file
 from logging import getLogger
 
 import boilerplate
-
-from hseling_api_direct_speech.process import process_data
+import os
+import io
+from hseling_api_direct_speech.process import process_data, read_file
 from hseling_api_direct_speech.query import query_data
 
 
-ALLOWED_EXTENSIONS = ['txt']
+ALLOWED_EXTENSIONS = ['txt', 'xml']
 
 
 log = getLogger(__name__)
@@ -38,9 +39,7 @@ def process_task(file_ids_list=None):
         processed_file_ids.append(
             boilerplate.add_processed_file(
                 processed_file_id,
-                contents,
-                extension='txt'
-            ))
+                contents))
     return processed_file_ids
 
 
@@ -79,17 +78,31 @@ def process_endpoint(file_ids=None):
     return jsonify({"task_id": str(task)})
 
 
-@app.route("/query/<path:file_id>")
-def query_endpoint(file_id):
+
+@app.route('/query', methods=['GET', 'POST'])
+@app.route("/query/<path:file_id>", methods=['GET', 'POST'])
+def query_endpoint(file_id=None):
     query_type = request.args.get('type')
-    if not query_type:
+    tags_required = request.get_json()
+    if file_id is None and query_type is None and tags_required is None:
         return jsonify({"error": boilerplate.ERROR_NO_QUERY_TYPE_SPECIFIED})
-    processed_file_id = boilerplate.PROCESSED_PREFIX + file_id
-    if processed_file_id in boilerplate.list_files(recursive=True):
-        return jsonify({"result": query_data({
-            processed_file_id: boilerplate.get_file(processed_file_id)
-        }, query_type=query_type)})
-    return jsonify({"error": boilerplate.ERROR_NO_SUCH_FILE})
+    else:
+        if file_id is None:
+            processed_file, file_id = boilerplate.get_gold("txt")
+            text = read_file(processed_file)
+        else:
+            processed_file_id = boilerplate.PROCESSED_PREFIX + file_id
+            processed_file = boilerplate.get_file_object(processed_file_id)
+            if processed_file_id in boilerplate.list_files(recursive=True):
+                text = boilerplate.get_file(processed_file_id)
+            else:
+                return jsonify({"error": boilerplate.ERROR_NO_SUCH_FILE})
+        if tags_required is None:
+            return send_file(processed_file, mimetype='txt',
+                             attachment_filename=file_id, as_attachment=True)
+        else:
+            return jsonify(query_data(text, tags_required))
+
 
 
 @app.route("/status/<task_id>")

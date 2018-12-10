@@ -1,7 +1,7 @@
 from os import environ
 from io import BytesIO, SEEK_END, SEEK_SET
 from uuid import uuid4
-
+import os
 from celery import Celery, result
 from werkzeug.utils import secure_filename
 
@@ -26,6 +26,7 @@ ERROR_NO_FILE_PART = "ERROR_NO_FILE_PART"
 ERROR_NO_SELECTED_FILE = "ERROR_NO_SELECTED_FILE"
 ERROR_NO_SUCH_FILE = "ERROR_NO_SUCH_FILE"
 ERROR_NO_QUERY_TYPE_SPECIFIED = "ERROR_NO_QUERY_TYPE_SPECIFIED"
+ERROR_NO_TAG_SPECIFIED = "ERROR_NO_TAG_SPECIFIED"
 
 ENDPOINT_ROOT = "ENDPOINT_ROOT"
 ENDPOINT_SCRAP = "ENDPOINT_SCRAP"
@@ -103,6 +104,11 @@ def get_file(filename):
 
 
 @with_minio
+def get_file_object(filename):
+    return minioClient.get_object(MINIO_BUCKET_NAME, filename)
+
+
+@with_minio
 def list_files(**kwargs):
     return list(str(file_id.object_name) for file_id
                 in minioClient.list_objects(MINIO_BUCKET_NAME, **kwargs))
@@ -160,6 +166,12 @@ def add_processed_file(processed_file_id, contents, extension=None):
     if extension:
         filename = PROCESSED_PREFIX + processed_file_id + ("." + extension)
     else:
-        filename = ""
+        filename = PROCESSED_PREFIX + processed_file_id
     put_file(filename, contents)
     return filename
+
+
+def get_gold(output_type):
+    gold_filename = "static/gold.{}".format(output_type)
+    return gold_filename, os.path.basename(gold_filename)
+
