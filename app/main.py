@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request, send_file
+from flask import Flask, jsonify, request, send_file, make_response
 from logging import getLogger
 
 import boilerplate
@@ -61,7 +61,14 @@ def upload_endpoint():
 @app.route('/files/<path:file_id>')
 def get_file_endpoint(file_id):
     if file_id in boilerplate.list_files(recursive=True):
-        return boilerplate.get_file(file_id)
+        response = make_response(boilerplate.get_file(file_id))
+        response.headers["Content-Disposition"] = ""\
+        "attachment; filename=%s" % file_id
+        return response
+    if file_id == "gold":
+        query_type = request.args.get('type')
+        processed_file, file_id = boilerplate.get_gold(query_type)
+        return send_file(processed_file, mimetype='txt', attachment_filename=file_id, as_attachment=True)
     return jsonify({'error': boilerplate.ERROR_NO_SUCH_FILE})
 
 
@@ -78,31 +85,22 @@ def process_endpoint(file_ids=None):
     return jsonify({"task_id": str(task)})
 
 
-
-@app.route('/query', methods=['GET', 'POST'])
 @app.route("/query/<path:file_id>", methods=['GET', 'POST'])
 def query_endpoint(file_id=None):
-    query_type = request.args.get('type')
     tags_required = request.get_json()
-    if file_id is None and query_type is None and tags_required is None:
+    if file_id is None and tags_required is None:
         return jsonify({"error": boilerplate.ERROR_NO_QUERY_TYPE_SPECIFIED})
     else:
-        if file_id is None:
+        if file_id == "gold":
             processed_file, file_id = boilerplate.get_gold("txt")
             text = read_file(processed_file)
         else:
             processed_file_id = boilerplate.PROCESSED_PREFIX + file_id
-            processed_file = boilerplate.get_file_object(processed_file_id)
             if processed_file_id in boilerplate.list_files(recursive=True):
                 text = boilerplate.get_file(processed_file_id)
             else:
                 return jsonify({"error": boilerplate.ERROR_NO_SUCH_FILE})
-        if tags_required is None:
-            return send_file(processed_file, mimetype='txt',
-                             attachment_filename=file_id, as_attachment=True)
-        else:
-            return jsonify(query_data(text, tags_required))
-
+        return jsonify(query_data(text, tags_required))
 
 
 @app.route("/status/<task_id>")
