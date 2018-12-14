@@ -5,12 +5,6 @@ from .speech.sentiment_detector import SentimentDetector
 from .speech.verb_tagger import VerbTagger
 from .speech.pipeline import Pipeline
 from .speech.said_comment_tagger import SaidCommentTagger
-from bs4 import BeautifulSoup
-
-
-def read_file(path):
-    with open(path, 'r', encoding='utf-8') as file:
-        return file.read()
 
 
 def process_data(data):

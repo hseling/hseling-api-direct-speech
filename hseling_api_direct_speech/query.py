@@ -1,41 +1,27 @@
 from bs4 import BeautifulSoup
 
 
-def query_data(query_type,  contents, tags):
+def query_data(query_type, contents, tags):
     if isinstance(contents, bytes):
         text = contents.decode('utf-8')
     else:
         text = contents
+
     if query_type == "tags":
-        param_result = {}
-        tag_result = get_tags_from(text, tags["tags"])
-        if "params" in tags:
-            param_result = get_params_from(tag_result, tags["params"])
-        return {"tags": tag_result, "params": param_result}
+        return {"tags": get_tags_from(text, tags["tags"], tags["params"])}
     elif query_type == "statistics":
-        pass
+        return {"statistics": 0}
     elif query_type == "examples":
-        pass
+        return {"tags": get_tags_from(text, ["text"])}
     else:
-        return None
+        return {"error": "incorrect query type"}
 
 
-
-
-def get_tags_from(text, taglist):
+def get_tags_from(text, taglist, paramlist=None):
     result = {}
     tree = read_xml(text)
     for tag in taglist:
         result[tag] = [i.text for i in tree.findAll(tag)]
-    return result
-
-
-def get_params_from(text, params):
-    result = {}
-    tree = read_xml(text)
-    for param in params:
-        all_results = tree.select("[{}]".format(param))
-        result[param] = [i[param] for i in all_results]
     return result
 
 

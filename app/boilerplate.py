@@ -2,6 +2,8 @@ from os import environ
 from io import BytesIO, SEEK_END, SEEK_SET
 from uuid import uuid4
 import os
+import json
+from bs4 import BeautifulSoup
 from celery import Celery, result
 from werkzeug.utils import secure_filename
 
@@ -175,3 +177,18 @@ def get_gold(output_type):
     gold_filename = "static/gold.{}".format(output_type)
     return gold_filename, os.path.basename(gold_filename)
 
+
+def get_gold_statistics():
+    gold_filename = "static/gold_statistics.json"
+    with open(gold_filename, 'r', encoding='utf-8') as file:
+        return json.load(file)
+
+
+def get_gold_examples(limit):
+    gold_filename = "static/gold_examples.json"
+    with open(gold_filename, 'r', encoding='utf-8') as file:
+        tree = BeautifulSoup('<text>'+file.read()+'</text>', "lxml")
+        if limit is None:
+            return [i.text for i in tree.findAll("text")]
+        else:
+            return [i.text for i in tree.findAll("text")][:limit]

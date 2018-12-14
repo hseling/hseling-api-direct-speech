@@ -4,7 +4,7 @@ from logging import getLogger
 import boilerplate
 import os
 import io
-from hseling_api_direct_speech.process import process_data, read_file
+from hseling_api_direct_speech.process import process_data
 from hseling_api_direct_speech.query import query_data
 
 
@@ -88,13 +88,23 @@ def process_endpoint(file_ids=None):
 @app.route("/query/<path:file_id>", methods=['GET', 'POST'])
 def query_endpoint(file_id=None):
     query_type = request.args.get('type')
-    tags_required = request.get_json()
-    if file_id is None and tags_required is None:
+    if request.method == 'POST':
+        tags_required = request.get_json()
+    else:
+        tags_required = None
+
+    if file_id is None and query_type is None:
         return jsonify({"error": boilerplate.ERROR_NO_QUERY_TYPE_SPECIFIED})
     else:
         if file_id == "gold":
-            processed_file, file_id = boilerplate.get_gold("txt")
-            text = read_file(processed_file)
+            if query_type == "statistics":
+                return jsonify(boilerplate.get_gold_statistics())
+            if query_type == "examples":
+                limit = request.args.get('limit')
+                return jsonify(boilerplate.get_gold_examples(limit))
+            else:
+                processed_file, file_id = boilerplate.get_gold("txt")
+                text = boilerplate.read_file(processed_file)
         else:
             processed_file_id = boilerplate.PROCESSED_PREFIX + file_id
             if processed_file_id in boilerplate.list_files(recursive=True):
