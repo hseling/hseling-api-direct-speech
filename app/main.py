@@ -2,8 +2,6 @@ from flask import Flask, jsonify, request, send_file, make_response
 from logging import getLogger
 
 import boilerplate
-import os
-import io
 from hseling_api_direct_speech.process import process_data
 from hseling_api_direct_speech.query import query_data
 
