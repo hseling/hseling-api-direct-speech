@@ -18,13 +18,13 @@ def query_data(query_type, contents, tags):
         return {"error": "incorrect query type"}
 
 
-def get_tags_from(tree, taglist):
-    tags = taglist["tags"]
+def get_tags_from(tree, tag):
+    tag = tag["tag"]
     result = {}
-    for tag in tags:
+    if "param" in tag:
+        result[tag] = [i.text for i in tree.findAll(tag, tag["param"])]
+    else:
         result[tag] = [i.text for i in tree.findAll(tag)]
-    if "params" in taglist:
-        params = taglist["params"]
     return result
 
 
