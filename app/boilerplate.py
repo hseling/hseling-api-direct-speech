@@ -192,3 +192,7 @@ def get_gold_examples(limit):
             return [i.text for i in tree.findAll("text")]
         else:
             return [i.text for i in tree.findAll("text")][:limit]
+
+def read_file(path):
+    with open(path, 'r', encoding='utf-8') as file:
+        return file.read()
