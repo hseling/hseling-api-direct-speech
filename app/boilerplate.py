@@ -185,7 +185,7 @@ def get_gold_statistics():
 
 
 def get_gold_examples(limit):
-    gold_filename = "static/gold_examples.json"
+    gold_filename = "static/gold_examples.xml"
     with open(gold_filename, 'r', encoding='utf-8') as file:
         tree = BeautifulSoup('<text>'+file.read()+'</text>', "lxml")
         if limit is None:
