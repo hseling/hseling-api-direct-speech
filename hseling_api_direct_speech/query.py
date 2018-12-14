@@ -1,18 +1,25 @@
 from bs4 import BeautifulSoup
 
 
-def query_data(contents, tags):
+def query_data(query_type,  contents, tags):
     if isinstance(contents, bytes):
         text = contents.decode('utf-8')
     else:
         text = contents
-    tag_result = {}
-    param_result = {}
-    if "tags" in tags:
+    if query_type == "tags":
+        param_result = {}
         tag_result = get_tags_from(text, tags["tags"])
-    if "params" in tags:
-        param_result = get_params_from(text, tags["params"])
-    return {"tags": tag_result, "params": param_result}
+        if "params" in tags:
+            param_result = get_params_from(tag_result, tags["params"])
+        return {"tags": tag_result, "params": param_result}
+    elif query_type == "statistics":
+        pass
+    elif query_type == "examples":
+        pass
+    else:
+        return None
+
+
 
 
 def get_tags_from(text, taglist):

@@ -87,6 +87,7 @@ def process_endpoint(file_ids=None):
 
 @app.route("/query/<path:file_id>", methods=['GET', 'POST'])
 def query_endpoint(file_id=None):
+    query_type = request.args.get('type')
     tags_required = request.get_json()
     if file_id is None and tags_required is None:
         return jsonify({"error": boilerplate.ERROR_NO_QUERY_TYPE_SPECIFIED})
@@ -100,7 +101,7 @@ def query_endpoint(file_id=None):
                 text = boilerplate.get_file(processed_file_id)
             else:
                 return jsonify({"error": boilerplate.ERROR_NO_SUCH_FILE})
-        return jsonify(query_data(text, tags_required))
+        return jsonify(query_data(query_type, text, tags_required))
 
 
 @app.route("/status/<task_id>")
