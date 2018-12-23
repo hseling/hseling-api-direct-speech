@@ -26,9 +26,11 @@ class SentimentDetector(PipelineStep):
 
     def __define_characteristic(self, said):
         result = sent.analyze(said.text)
-        result = {'negative': result['negative'], 'positive': result["positive"]}
+        result = {'negative': result['negative'],
+                  'positive': result["positive"]}
         if result['negative'] == result['positive']:
             sentiment = 'neutral'
         else:
-            sentiment = sorted(result.items(), key=lambda x: x[1], reverse=True)[0][0]
+            sentiment = sorted(result.items(), key=lambda x: x[1],
+                               reverse=True)[0][0]
         return sentiment

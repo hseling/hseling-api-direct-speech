@@ -16,7 +16,8 @@ class SpeechDetector(PipelineStep):
 
     def __compute_regex(self, left_context, speech, right_context):
         try:
-            regex = re.compile("(" + left_context + ")" + "(" + speech + ")" + "(" + right_context + ")",
+            regex = re.compile("(" + left_context + ")" + "(" + speech + ")" +
+                               "(" + right_context + ")",
                                flags=re.MULTILINE)
             return regex
         except Exception as e:

@@ -1,9 +1,9 @@
 import re
+from nltk.tokenize import word_tokenize
+from .step import PipelineStep
 import pymorphy2
 
 morph = pymorphy2.MorphAnalyzer()
-from nltk.tokenize import word_tokenize
-from .step import PipelineStep
 
 
 class VerbTagger(PipelineStep):
@@ -16,11 +16,14 @@ class VerbTagger(PipelineStep):
     def __make_new_comments(self, string):
         for word in word_tokenize(string):
             lemma = morph.parse(word)[0].normal_form
-            regex = re.compile(r'((?<=[ \.:<>!-,])|^)' + '(' + re.escape(word) + ')' + '((?=[ \.:<>!-,]))')
+            regex = re.compile(r'((?<=[ \.:<>!-,])|^)' + '(' +
+                               re.escape(word) + ')' + '((?=[ \.:<>!-,]))')
             for line in self.__df_verbs:
                 if lemma == line["verb"]:
-                    string = re.sub(regex, '<speech_verb ' + 'semantic="' + str(line['semantic']) + '" emotion="' + str(
-                        line['emotion']) + '">' + word + '</speech_verb>', string)
+                    string = re.sub(regex, '<speech_verb ' + 'semantic="' +
+                                    str(line['semantic']) + '" emotion="' +
+                                    str(line['emotion']) + '">' + word +
+                                    '</speech_verb>', string)
         return string
 
     def __find_comments(self, text):

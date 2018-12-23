@@ -26,9 +26,10 @@ def process_task(file_ids_list=None):
                             for file_id in file_ids_list
                             if (boilerplate.UPLOAD_PREFIX + file_id)
                             in files_to_process]
-    data_to_process = {file_id[len(boilerplate.UPLOAD_PREFIX):]:
-                           boilerplate.get_file(file_id)
-                       for file_id in files_to_process}
+    data_to_process = {file_id[len(
+        boilerplate.UPLOAD_PREFIX):]:
+                           boilerplate.get_file(
+                               file_id) for file_id in files_to_process}
     processed_file_ids = list()
     for processed_file_id, contents in process_data(data_to_process):
         processed_file_ids.append(
@@ -57,13 +58,14 @@ def upload_endpoint():
 def get_file_endpoint(file_id):
     if file_id in boilerplate.list_files(recursive=True):
         response = make_response(boilerplate.get_file(file_id))
-        response.headers["Content-Disposition"] = "" \
-                                                  "attachment; filename=%s" % file_id
+        response.headers["Content-Disposition"] = \
+            "attachment; filename=%s" % file_id
         return response
     if file_id == "gold":
         query_type = request.args.get('type')
         processed_file, file_id = boilerplate.get_gold(query_type)
-        return send_file(processed_file, mimetype='txt', attachment_filename=file_id, as_attachment=True)
+        return send_file(processed_file, mimetype='txt',
+                         attachment_filename=file_id, as_attachment=True)
     return jsonify({'error': boilerplate.ERROR_NO_SUCH_FILE})
 
 
