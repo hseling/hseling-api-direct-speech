@@ -17,7 +17,7 @@ class VerbTagger(PipelineStep):
         for word in word_tokenize(string):
             lemma = morph.parse(word)[0].normal_form
             regex = re.compile(r'((?<=[ \.:<>!-,])|^)' + '(' +
-                               re.escape(word) + ')' + '((?=[ \.:<>!-,]))')
+                               re.escape(word) + ')' + r'((?=[ \.:<>!-,]))')
             for line in self.__df_verbs:
                 if lemma == line["verb"]:
                     string = re.sub(regex, '<speech_verb ' + 'semantic="' +

@@ -26,5 +26,5 @@ class SpeechDetector(PipelineStep):
 
     def __find_speech(self, left_context, speech, right_context, text):
         rule = self.__compute_regex(left_context, speech, right_context)
-        text = re.sub(rule, "\g<1><speech>\g<2></speech>\g<3>", text)
+        text = re.sub(rule, r"\g<1><speech>\g<2></speech>\g<3>", text)
         return text
