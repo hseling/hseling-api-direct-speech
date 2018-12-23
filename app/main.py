@@ -100,7 +100,7 @@ def query_endpoint(file_id=None):
                 limit = request.args.get('limit')
                 try:
                     limit = int(limit)
-                except ValueError as e:
+                except ValueError:
                     return jsonify({"error": "wrong limit parameter passed"})
                 return jsonify(boilerplate.get_gold_examples(limit))
             else:

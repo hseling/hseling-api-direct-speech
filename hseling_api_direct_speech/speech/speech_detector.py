@@ -20,7 +20,7 @@ class SpeechDetector(PipelineStep):
                                "(" + right_context + ")",
                                flags=re.MULTILINE)
             return regex
-        except Exception as e:
+        except Exception:
             print("EXCEPTION IN REG EXP:", left_context, speech, right_context)
             return "EXCEPTION IN REG EXP"
 
