@@ -28,4 +28,3 @@ def process_data(data):
         file_id = file_id
     if result:
         yield file_id, result
-

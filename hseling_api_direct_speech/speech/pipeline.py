@@ -1,4 +1,3 @@
-
 class Pipeline:
     def __init__(self, *args):
         self.__steps = list(args)

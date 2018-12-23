@@ -11,7 +11,6 @@ from minio import Minio
 from minio.error import (ResponseError, BucketAlreadyOwnedByYou,
                          BucketAlreadyExists)
 
-
 CELERY_BROKER_URL = environ["CELERY_BROKER_URL"]
 CELERY_RESULT_BACKEND = environ["CELERY_RESULT_BACKEND"]
 
@@ -36,7 +35,6 @@ ENDPOINT_UPLOAD = "ENDPOINT_UPLOAD"
 ENDPOINT_PROCESS = "ENDPOINT_PROCESS"
 ENDPOINT_STATUS = "ENDPOINT_STATUS"
 ENDPOINT_QUERY = "ENDPOINT_QUERY"
-
 
 RESTRICTED_MODE = environ["RESTRICTED_MODE"]
 
@@ -187,11 +185,12 @@ def get_gold_statistics():
 def get_gold_examples(limit):
     gold_filename = "static/gold_examples.xml"
     with open(gold_filename, 'r', encoding='utf-8') as file:
-        tree = BeautifulSoup('<text>'+file.read()+'</text>', "lxml")
+        tree = BeautifulSoup('<text>' + file.read() + '</text>', "lxml")
         if limit is None:
-            return [i.text for i in tree.findAll("text")]
+            return [str(i) for i in tree.findAll("text")]
         else:
-            return [i.text for i in tree.findAll("text")][:limit]
+            return [str(i) for i in tree.findAll("text")][:limit]
+
 
 def read_file(path):
     with open(path, 'r', encoding='utf-8') as file:

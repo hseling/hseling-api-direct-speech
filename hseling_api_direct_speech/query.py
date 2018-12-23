@@ -19,38 +19,36 @@ def query_data(query_type, contents, tags):
 
 def get_tags_from(tree, tag_with_param):
     tag = tag_with_param["tag"]
-    result = {}
     if "param" in tag_with_param:
         return [i.text for i in tree.findAll(tag, tag_with_param["param"])]
     else:
         return [i.text for i in tree.findAll(tag)]
-    return result
 
 
 def get_statistics(tree):
     result = {}
-    tags_with_params = {"speech":[], 
-                        "said":[{"type": "direct"}, {"type": "indirect"},
-                                {"aloud":"true"}, {"aloud":"false"}], 
-                        "author_comment":[], 
-                        "speech_verb":[{"semantic":"speech"},
-                                       {"semantic":"action"},
-                                       {"semantic":"thought"},
-                                       {"semantic":"song"},
-                                       {"emotion":"neutral"},
-                                       {"emotion":"loud"},
-                                       {"emotion":"rude"},
-                                       {"emotion":"sad"},
-                                       {"emotion":"interrupt"},
-                                       {"emotion":"yes"},
-                                       {"emotion":"no"},
-                                       {"emotion":"emotional"},
-                                       {"emotion":"question"}]}
+    tags_with_params = {"speech": [],
+                        "said": [{"type": "direct"}, {"type": "indirect"},
+                                 {"aloud": "true"}, {"aloud": "false"}],
+                        "author_comment": [],
+                        "speech_verb": [{"semantic": "speech"},
+                                        {"semantic": "action"},
+                                        {"semantic": "thought"},
+                                        {"semantic": "song"},
+                                        {"emotion": "neutral"},
+                                        {"emotion": "loud"},
+                                        {"emotion": "rude"},
+                                        {"emotion": "sad"},
+                                        {"emotion": "interrupt"},
+                                        {"emotion": "yes"},
+                                        {"emotion": "no"},
+                                        {"emotion": "emotional"},
+                                        {"emotion": "question"}]}
     for tag in tags_with_params:
         result[tag] = len(tree.findAll(tag))
         for param in tags_with_params[tag]:
-            str_param = "_".join([k+"_"+v for k,v in param.items()])
-            result[tag+"_"+str_param] = len(tree.findAll(tag, param))
+            str_param = "_".join([k + "_" + v for k, v in param.items()])
+            result[tag + "_" + str_param] = len(tree.findAll(tag, param))
     return result
 
 
@@ -62,4 +60,4 @@ def get_examples(tree, tags):
 
 
 def read_xml(text):
-    return BeautifulSoup('<text>'+text+'</text>', "lxml")
+    return BeautifulSoup('<text>' + text + '</text>', "lxml")

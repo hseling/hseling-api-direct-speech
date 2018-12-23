@@ -5,12 +5,9 @@ import boilerplate
 from hseling_api_direct_speech.process import process_data
 from hseling_api_direct_speech.query import query_data
 
-
 ALLOWED_EXTENSIONS = ['txt', 'xml']
 
-
 log = getLogger(__name__)
-
 
 app = Flask(__name__)
 app.config.update(
@@ -30,7 +27,7 @@ def process_task(file_ids_list=None):
                             if (boilerplate.UPLOAD_PREFIX + file_id)
                             in files_to_process]
     data_to_process = {file_id[len(boilerplate.UPLOAD_PREFIX):]:
-                       boilerplate.get_file(file_id)
+                           boilerplate.get_file(file_id)
                        for file_id in files_to_process}
     processed_file_ids = list()
     for processed_file_id, contents in process_data(data_to_process):
@@ -60,8 +57,8 @@ def upload_endpoint():
 def get_file_endpoint(file_id):
     if file_id in boilerplate.list_files(recursive=True):
         response = make_response(boilerplate.get_file(file_id))
-        response.headers["Content-Disposition"] = ""\
-        "attachment; filename=%s" % file_id
+        response.headers["Content-Disposition"] = "" \
+                                                  "attachment; filename=%s" % file_id
         return response
     if file_id == "gold":
         query_type = request.args.get('type')
@@ -99,6 +96,10 @@ def query_endpoint(file_id=None):
                 return jsonify(boilerplate.get_gold_statistics())
             if query_type == "examples":
                 limit = request.args.get('limit')
+                try:
+                    limit = int(limit)
+                except ValueError as e:
+                    return jsonify({"error": "wrong limit parameter passed"})
                 return jsonify(boilerplate.get_gold_examples(limit))
             else:
                 processed_file, file_id = boilerplate.get_gold("txt")
@@ -146,6 +147,5 @@ def main_endpoint():
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=True, port=80)
-
 
 __all__ = [app, celery]

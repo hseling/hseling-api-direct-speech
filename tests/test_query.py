@@ -12,5 +12,5 @@ test_data = [
 
 @pytest.mark.parametrize("input_data, query_type, expected_result", test_data)
 def test_process_data(input_data, query_type, expected_result):
-    result = query_data(input_data, query_type)
+    result = query_data(input_data, query_type, {})
     assert result == expected_result

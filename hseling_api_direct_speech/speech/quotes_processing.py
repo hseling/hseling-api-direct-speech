@@ -1,6 +1,7 @@
 import re
 from .step import PipelineStep
 
+
 class QuotesAdapter(PipelineStep):
     QUOTES_OPEN = '«'
     QUOTES_CLOSE = '»'

@@ -5,7 +5,7 @@ import re
 class FileReader(PipelineStep):
     
     def __init__(self):
-        pass
+        super().__init__()
     
     def annotate(self, text):
         return self.__delete_newlines(text)

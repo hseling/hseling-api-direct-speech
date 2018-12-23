@@ -3,7 +3,7 @@ from .step import PipelineStep
 
 
 class SaidCommentTagger(PipelineStep):
-    #SEPARATOR = r'»,? [—–-]{1,2} |[.,!?…] [—–-]{1,2} |: \n?«|:[ \n][—–-]{1,2} |», '
+    # SEPARATOR = r'»,? [—–-]{1,2} |[.,!?…] [—–-]{1,2} |: \n?«|:[ \n][—–-]{1,2} |», '
     SEPARATOR = r'»,?[ \u00A0][—–-]{1,2}[ \u00A0]|[.,!?…][ \u00A0][—–-]{1,2}[ \u00A0]|:[ \u00A0]\n?«|:[ \u00A0\n][—–-]{1,2}[ \u00A0]|»,[ \u00A0]'
     FIRST_IN_SAID = '-–—−«'
     SPEECH = r'<speech>(.+?)</speech>'
