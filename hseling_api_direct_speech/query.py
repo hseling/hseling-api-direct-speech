@@ -7,7 +7,6 @@ def query_data(query_type, contents, tags):
     else:
         text = contents
     tree = read_xml(text)
-    print(query_type)
     if query_type == "tags":
         return {"tags": get_tags_from(tree, tags)}
     elif query_type == "statistics":
@@ -30,11 +29,28 @@ def get_tags_from(tree, tag_with_param):
 
 def get_statistics(tree):
     result = {}
-    tags_with_params = {"speech":[], "said":["type", "aloud"], "author_comment":[], "speech_verb":["semantic", "emotion"]}
+    tags_with_params = {"speech":[], 
+                        "said":[{"type": "direct"}, {"type": "indirect"},
+                                {"aloud":"true"}, {"aloud":"false"}], 
+                        "author_comment":[], 
+                        "speech_verb":[{"semantic":"speech"},
+                                       {"semantic":"action"},
+                                       {"semantic":"thought"},
+                                       {"semantic":"song"},
+                                       {"emotion":"neutral"},
+                                       {"emotion":"loud"},
+                                       {"emotion":"rude"},
+                                       {"emotion":"sad"},
+                                       {"emotion":"interrupt"},
+                                       {"emotion":"yes"},
+                                       {"emotion":"no"},
+                                       {"emotion":"emotional"},
+                                       {"emotion":"question"}]}
     for tag in tags_with_params:
         result[tag] = len(tree.findAll(tag))
         for param in tags_with_params[tag]:
-            result[tag+"_"+param] = len(tree.findAll(tag, ))
+            str_param = "_".join([k+"_"+v for k,v in param.items()])
+            result[tag+"_"+str_param] = len(tree.findAll(tag, param))
     return result
 
 
@@ -47,9 +63,3 @@ def get_examples(tree, tags):
 
 def read_xml(text):
     return BeautifulSoup('<text>'+text+'</text>', "lxml")
-
-filepath = "C:/Users/Irina/Downloads/PortableGit/hseling-api-direct-speech/app/static/gold.txt"
-with open(filepath, "r", encoding="utf-8") as r:
-    text = r.read()
-tree = read_xml(text)
-print(len(get_tags_from(tree, {"tag":"speech_verb", "param":{"characteristics": "neutral"}})))
