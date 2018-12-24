@@ -7,10 +7,8 @@ COPY ./requirements.txt /dependencies/requirements.txt
 COPY ./setup.py /dependencies/setup.py
 COPY ./nltk_data /usr/local/nltk_data
 
-RUN pip install -r /dependencies/requirements.txt
 RUN apk add python3 git
-RUN pip install -U git+https://github.com/text-machine-lab/sentimental.git
-
+RUN pip install -r /dependencies/requirements.txt
 
 FROM hseling/hseling-api-base:python3.6-alpine3.7 as production
 

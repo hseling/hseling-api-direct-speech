@@ -8,3 +8,4 @@ html5lib
 beautifulsoup4
 pymorphy2
 nltk
+git+git://github.com/text-machine-lab/sentimental.git#egg=sentimental
