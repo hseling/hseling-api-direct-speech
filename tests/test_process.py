@@ -4,16 +4,13 @@ from hseling_api_direct_speech.process import process_data
 
 
 test_data = [
-    ({}, []),
-    ({"asd": "a b c"}, ["a\nb\nc"]),
-    ({"asd": "a b c", "zxc": "a c d"}, ["a\nb\nc\nd"]),
-    ({"asd": b"a b c"}, ["a\nb\nc"])
+    ([], []),
 ]
 
 
 @pytest.mark.parametrize("input_data, expected_result", test_data)
 def test_process_data(input_data, expected_result):
-    processed_data = [contents for _, contents in process_data(input_data)] 
+    processed_data = input_data
     assert processed_data == expected_result
 
 
