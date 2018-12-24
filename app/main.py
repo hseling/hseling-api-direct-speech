@@ -1,17 +1,13 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, send_file, make_response
 from logging import getLogger
 
 import boilerplate
-
 from hseling_api_direct_speech.process import process_data
 from hseling_api_direct_speech.query import query_data
 
-
-ALLOWED_EXTENSIONS = ['txt']
-
+ALLOWED_EXTENSIONS = ['txt', 'xml']
 
 log = getLogger(__name__)
-
 
 app = Flask(__name__)
 app.config.update(
@@ -30,17 +26,16 @@ def process_task(file_ids_list=None):
                             for file_id in file_ids_list
                             if (boilerplate.UPLOAD_PREFIX + file_id)
                             in files_to_process]
-    data_to_process = {file_id[len(boilerplate.UPLOAD_PREFIX):]:
-                       boilerplate.get_file(file_id)
-                       for file_id in files_to_process}
+    data_to_process = {file_id[len(
+        boilerplate.UPLOAD_PREFIX):]:
+                           boilerplate.get_file(
+                               file_id) for file_id in files_to_process}
     processed_file_ids = list()
     for processed_file_id, contents in process_data(data_to_process):
         processed_file_ids.append(
             boilerplate.add_processed_file(
                 processed_file_id,
-                contents,
-                extension='txt'
-            ))
+                contents))
     return processed_file_ids
 
 
@@ -62,7 +57,15 @@ def upload_endpoint():
 @app.route('/files/<path:file_id>')
 def get_file_endpoint(file_id):
     if file_id in boilerplate.list_files(recursive=True):
-        return boilerplate.get_file(file_id)
+        response = make_response(boilerplate.get_file(file_id))
+        response.headers["Content-Disposition"] = \
+            "attachment; filename=%s" % file_id
+        return response
+    if file_id == "gold":
+        query_type = request.args.get('type')
+        processed_file, file_id = boilerplate.get_gold(query_type)
+        return send_file(processed_file, mimetype='txt',
+                         attachment_filename=file_id, as_attachment=True)
     return jsonify({'error': boilerplate.ERROR_NO_SUCH_FILE})
 
 
@@ -79,17 +82,37 @@ def process_endpoint(file_ids=None):
     return jsonify({"task_id": str(task)})
 
 
-@app.route("/query/<path:file_id>")
-def query_endpoint(file_id):
+@app.route("/query/<path:file_id>", methods=['GET', 'POST'])
+def query_endpoint(file_id=None):
     query_type = request.args.get('type')
-    if not query_type:
+    if request.method == 'POST':
+        tags_required = request.get_json()
+    else:
+        tags_required = None
+
+    if file_id is None and query_type is None:
         return jsonify({"error": boilerplate.ERROR_NO_QUERY_TYPE_SPECIFIED})
-    processed_file_id = boilerplate.PROCESSED_PREFIX + file_id
-    if processed_file_id in boilerplate.list_files(recursive=True):
-        return jsonify({"result": query_data({
-            processed_file_id: boilerplate.get_file(processed_file_id)
-        }, query_type=query_type)})
-    return jsonify({"error": boilerplate.ERROR_NO_SUCH_FILE})
+    else:
+        if file_id == "gold":
+            if query_type == "statistics":
+                return jsonify(boilerplate.get_gold_statistics())
+            if query_type == "examples":
+                limit = request.args.get('limit')
+                try:
+                    limit = int(limit)
+                except ValueError:
+                    return jsonify({"error": "wrong limit parameter passed"})
+                return jsonify(boilerplate.get_gold_examples(limit))
+            else:
+                processed_file, file_id = boilerplate.get_gold("txt")
+                text = boilerplate.read_file(processed_file)
+        else:
+            processed_file_id = boilerplate.PROCESSED_PREFIX + file_id
+            if processed_file_id in boilerplate.list_files(recursive=True):
+                text = boilerplate.get_file(processed_file_id)
+            else:
+                return jsonify({"error": boilerplate.ERROR_NO_SUCH_FILE})
+        return jsonify(query_data(query_type, text, tags_required))
 
 
 @app.route("/status/<task_id>")
@@ -126,6 +149,5 @@ def main_endpoint():
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=True, port=80)
-
 
 __all__ = [app, celery]

@@ -1,0 +1,1048 @@
+<text>
+	<speech>
+		<said type="direct" who="Uncle" corresp="Qasim" aloud="true"> -- Жарко, душно в Дербенте! Взойди-ка на кровлю, Касим; посмотри, как падает за горы солнышко: не краснеет ли запад, не сбираются ли тучи на небе?
+		</said>
+	</speech>
+	<speech>
+		<said type="direct" who="Qasim" corresp="Uncle" aloud="true"> -- Нет, ами (дядя)! Запад голубее глаз моей сестрицы. Солнце упало ярко, словно "золотой цвет" на ее груди. Ни один взор его не гаснет в тумане.
+		</said>
+	</speech>
+</text>
+
+<text>
+	<speech>
+		<said type="direct" who="Uncle" corresp="Qasim" aloud="true"> -- Взбеги на кровлю, Касим; погляди, не катится ли туман с гор Лезгистана. Не чернеет ли море, не скачет ли белогривый прибой через камни?
+		</said>
+	</speech>
+	<speech>
+		<said type="direct" who="Qasim" corresp="Uncle" aloud="true"> -- Нет, ами! Горы облиты божьей позолотой; море сверкает будто зеркало. Флаг на крепости Нарын-Кале обнял древко, как обнимает чадра стан красавицы. Ни одна волна не рассыплется жемчугом на берег; ни малейший ветерок не завьет в кудри пыли по дороге. Смирно все на море, тихо все на земле, ясно на небе!
+		</said>
+	</speech>
+</text>
+
+<text>А затем на миг воцарялось молчание; а затем взлетала на воздух стая охов вздохов. <speech><author_comment>Плечи подымались до ушей, брови до шапок ропот сливался в умолительное восклицание</author_comment>: <said type="direct" who="Undefined" corresp="None" aloud="true">"аман, аман (пощади, помилуй)!"</said>.</speech></text>
+
+<text>
+	<speech>
+		<said type="direct" who="Undefined" corresp="None" aloud="true"> -- А Искендер-бек?
+		</said> -- 
+		<author_comment><speech_verb semantic="speech" emotion="neutral">сказал</speech_verb> кто-то в толпе
+		</author_comment>.
+	</speech>
+	<speech>
+		<said type="direct" who="Undefined" corresp="None" aloud="true"> -- В самом деле!
+		</said>
+		<author_comment> -- <speech_verb semantic="speech" emotion="yes">подхватили</speech_verb> многие голоса. 
+		</author_comment>
+		<said type="direct" who="Undefined" corresp="None" aloud="true"> -- А Искендер-бек-то на что? Да как это мы его забыли, как пропустили розу между цветами, сокола между птицами? Аллах, аллах! Или у нас жар-то весь мозг из головы вытопил? Это странно! Это непостижимо! Это удивительно!
+		</said>
+	</speech>
+</text>
+
+<text><speech><said type="direct" who="Undefined" corresp="None" aloud="true"> -- Уговорит, как ему не уговорить?</said><author_comment> -- <speech_verb semantic="speech" emotion="loud">раздавалось</speech_verb> в толпе. </author_comment><said type="direct" who="Undefined" corresp="None" aloud="true"> -- Фетхали, если прибеднится, так у нищего полбороды выканючит... Самого шайтана перехитрит!.. Змею на хвосте заставит плясать! Преумнейшая бестия! Препочтенный плутяга! Тебя же обманет, с тебя ж за то придачи возьмет, да ты же ему и накланяешься. А как примется говорить, господи, твоя воля, как он говорит!</said></speech></text>
+
+<text>Кичкене с негою во взоре обняла старушку: Искендер-беку послышалось, что она даже вздохнула; я не слыхал, я не уверю в этом.
+<speech><said type="direct" who="Kichkene" corresp="Khanum" aloud="true"> -- Дядюшка Фетхали говорит, что я еще слишком молода,</said><author_comment> -- <speech_verb semantic="speech" emotion="neutral">примолвила</speech_verb> она почти грустно.</author_comment></speech>
+<speech><said type="direct" who="Khanum" corresp="Kichkene" aloud="true"> -- А что говорит твое сердечко, малютка моя?</said><author_comment> -- <speech_verb semantic="speech" emotion="no">возразила</speech_verb> смеючись Аджа-Ханум.</author_comment></speech>
+Кичкене резко схватила бубен, висевший на стене, и, колебля его звонки между расцвеченными хной пальчиками, вместо ответа пропела известную песню.</text>
+
+<text>Но старушка была догадлива и хотела кой для кого превратить эту догадку в уверенность.
+<speech><said type="direct" who="Khanum" corresp="Kichkene" aloud="true"> -- О, ты мой гюл ииси (ты мой запах розы)!</said><author_comment> -- <speech_verb semantic="speech" emotion="neutral">сказала</speech_verb> она, играя кольцами на мизинце Кичкени. </author_comment><said type="direct" who="Khanum" corresp="Kichkene" aloud="true"> -- Если б мой племянник Искендер-бек услыхал хоть за стеной твою песню, он бы разбил стену грудью, чтобы увидать певицу; а если б увидал, то похитил бы тебя, как лев серну.</said></speech></text>
+
+<text>Искендер углубился в размышление, как это надо? А перед ним давно уже стоял Гаджи-Юсуф. Право, за вычетом хвастовства и трусости, этот Гаджи-Юсуф был предоброе создание. Горесть товарища тронула его: если б умел, он бы заплакал, глядя на безмолвную задумчивость Искендера. Он тихо коснулся плеча хозяина и, хотя разодет был как свежепривозный кашенг, франт из Тебриза, однако сказал свой селям самым степенным голосом.
+<speech><said type="direct" who="Iskender" corresp="Yusuf" aloud="true"> -- На хабер (что нового)?</said><author_comment> -- <speech_verb semantic="speech" emotion="question">спросил</speech_verb> очнувшийся Искендер.</author_comment></speech>
+<speech><said type="direct" who="Yusuf" corresp="Iskender" aloud="true"> -- Пришло три корабля с хлебом: народ веселится.</said></speech>
+<speech><said type="direct" who="Iskender" corresp="Yusuf" aloud="true"> -- Если б пришли три корабля с мышьяком на отраву всем дербентцам, я бы радовался один более, чем теперь они все вместе.</said></speech></text>
+
+<text>
+	<speech>
+		<author_comment> И Сенька <speech_verb semantic="speech" emotion="question">спросил</speech_verb>Тимофей Родионыча: 
+		</author_comment>
+		<said type="direct" who="Senya" corresp="Timofey" aloud="true"> - Хорошо вам, папаша, в моих руках? 
+		</said>
+	</speech>
+	<speech>
+		<said type="direct" who="Timofey" corresp="Senya" aloud="true"> - Нет, 
+		</said> - 
+		<author_comment><speech_verb semantic="speech" emotion="neutral"> сказал</speech_verb> папаша,  
+		</author_comment> -
+		<said> худо мне. 
+		</said>
+	</speech>
+</text>
+
+
+
+<text>
+	<speech>
+		<said type="direct" who="Man" corresp="None" aloud="true"> - О господи, мамуня же ты моя всемилостивая! - 
+		</said>
+		<author_comment><speech_verb semantic="action" emotion="emotional"> взмахнул руками</speech_verb> мужик. 
+		</author_comment> 
+		<said type="direct" who="Man" corresp="None" aloud="true"> - Где ей, сироте, подняться... Она, сирота, подохнет...
+		</said>
+	</speech>
+	<speech>
+		<said type="direct" who="Dyakov" corresp="Man" aloud="true"> - Обижаешь коня,  кум, 
+		</said>  -
+		<author_comment>с  глубоким  убеждением  <speech_verb semantic="speech" emotion="neutral">ответил</speech_verb>  Дьяков,  
+		</author_comment> 
+		<said type="direct" who="Dyakov" corresp="Man" aloud="true">  - прямо-таки богохульствуешь, кум,  
+		</said>
+		<author_comment> - и он ловко снял с  седла  свое  статное тело атлета. 
+		</author_comment>
+	</speech>
+</text>
+
+
+<text>
+	<speech>
+		<said type="direct" who="Apolek" corresp="People" aloud="true"> - Пятнадцать злотых за  богоматерь,  двадцать  пять  злотых  за  святое семейство  и  пятьдесят  злотых  за  тайную  вечерю  с  изображением  всех родственников заказчика. Враг заказчика может быть изображен в образе Иуды Искариота, и за это добавляется лишних десять злотых,  
+		</said>
+		<author_comment> - так <speech_verb semantic="speech" emotion="loud">объявил</speech_verb> Аполек окрестным крестьянам, после того как его выгнали из строившегося храма. 
+		</author_comment>
+	</speech>
+</text>
+
+
+
+<text>Под окнами  шлялась  побирушка.
+	<speech>
+		<author_comment>   Она стукнула в раму и <speech_verb semantic="speech" emotion="neutral">сказала</speech_verb>:  
+		</author_comment>
+		<said type="direct" who="Beggar" corresp="People" aloud="true">  -  Здравствуйте,  иногородние  крестьяне.  Обратите  внимание  на   мое положение.
+		</said>- 		
+		<said type="direct" who="Tarakanych" corresp="Beggar" aloud="true">Какое там положение? -
+		</said> 
+		<author_comment ><speech_verb semantic="speech" emotion="neutral"> сказал</speech_verb> Тараканыч. 
+		</author_comment>
+		<said type="direct" who="Tarakanych" corresp="Beggar" aloud="true">- Заходи, калечка.
+		</said>
+	</speech>
+</text>
+
+
+<text>И сказавши это, она увидела  Сашку,  который  пил  чай  у  стола  и  не поднимал глаз на божий мир.
+	<speech>
+		<said type="direct" who="Undefined" corresp="Tarakanych" aloud="true"> - Твой хлопец? -</said> 
+		<author_comment><speech_verb semantic="speech" emotion="neutral"> спросила</speech_verb> она Тараканыча.
+		</author_comment>
+	</speech>
+	<speech>
+		<said type="direct" who="Tarakanych" corresp="Undefined" aloud="true">- Вроде моего, -
+		</said> 
+		<author_comment><speech_verb semantic="speech" emotion="neutral">ответил</speech_verb> Тараканыч,
+		</author_comment>
+		<said type="direct" who="Tarakanych" corresp="Undefined" aloud="true">- женин.
+		</said>
+	</speech>
+	<speech>
+		<said type="direct" who="Undefined" corresp="Undefined" aloud="true">- Вот, деточка, глазенапы выкатил, -
+		</said>
+		<author_comment><speech_verb semantic="speech" emotion="neutral"> сказала</speech_verb> баба. 
+		</author_comment>
+		<said type="direct" who="Undefined" corresp="Undefined" aloud="true"> - Ну, иди сюда.
+		</said>
+	</speech>
+</text>
+
+
+<text>В некоторой стране жил-был либерал, и притом такой откровенный, что никто слова не молвит, а 
+	<speech>
+		<author_comment>он уж во все горло <speech_verb semantic="speech" emotion="rude">гаркает</speech_verb>:
+		</author_comment>
+		<said who="Liberal">: "Ах, господа, господа! что вы делаете! ведь вы сами себя губите!"
+		</said>
+	</speech>
+	<speech> 
+		<author_comment>И никто на него за это не сердился, а, напротив, все <speech_verb semantic="speech" emotion="neutral">говорили</speech_verb>:
+		</author_comment>
+		<said> "Пускай предупреждает -- нам же лучше!"
+		</said>
+	</speech>
+	<speech>
+		<said type="direct" who="Liberal" corresp="People" aloud="true">-- Три фактора, 
+		</said>
+		<author_comment><speech_verb semantic="speech" emotion="neutral">-- говорил</speech_verb> он,
+		</author_comment>
+		<said type="direct" who="Liberal" corresp="people" aloud="true">-- должны лежать в основании всякой общественности: свобода, обеспеченность и самодеятельность. Ежели общество лишено свободы, то это значит, что оно живет без идеалов, без горения мысли, не имея ни основы для творчества, ни веры в предстоящие ему судьбы. Ежели общество сознает себя необеспеченным, то это налагает на него печать подавленности и делает равнодушным к собственной участи. Ежели общество лишено самодеятельности, то оно становится неспособным к устройству своих дел и даже мало-помалу утрачивает представление об отечестве.
+		</said>
+	</speech>
+</text>
+
+
+<text>
+	<speech>
+		<author_comment>Он видел, Что кругом него люди, словно отравленные мухи, бродят, и<speech_verb semantic="speech" emotion="neutral">говорил</speech_verb> себе:
+		</author_comment> 
+		<said type="direct" who="Liberal" corresp="Liberal" aloud="false">"Это оттого, что они не сознают себя строителями своих судеб. Это колодники, к которым и счастие, и злосчастие приходит без всякого с их стороны предвидения, которые не отдаются беззаветно своим ощущениям, потому что не могут определить, действительно ли это ощущения, или какая-нибудь фантасмагория".
+		</said> 
+	</speech>
+</text>
+
+
+<text>И прежде всего, разумеется, обратился к сведущим людям.
+	<speech>-- 
+		<said type="direct" who="Liberal" corresp="Wisemen" aloud="true">Свобода -- ведь, кажется, тут ничего предосудительного нет?</said> -- 
+		<author_comment><speech_verb semantic="speech" emotion="question">спросил</speech_verb> он их.
+		</author_comment>
+	</speech>
+	<speech>-- 
+		<said type="direct" who="Wisemen" corresp="Liberal" aloud="true">Не только не предосудительно, но и весьма похвально,
+		</said> -- 
+		<author_comment><speech_verb semantic="speech" emotion="neutral">ответили</speech_verb> сведущие люди, --
+		</author_comment> 
+		<said type="direct" who="Wisemen" corresp="Liberal" aloud="true">ведь это только клевещут на нас, будто бы мы не желаем свободы; в действительности мы только об ней и печалимся... Но, разумеется, в пределах...
+		</said>
+	</speech>
+	<speech>-- 
+		<said type="direct" who="Liberal" corresp="Wisemen" aloud="true">Гм... "в пределах"... понимаю! А что вы скажете насчет обеспеченности?
+		</said>
+	</speech>
+	<speech>-- 
+		<said type="direct" who="Wisemen" corresp="Liberal" aloud="true">И это милости просим... Но, разумеется, тоже в пределах.
+		</said>
+	</speech>
+</text>
+
+
+ <text>
+ 	<speech>
+ 		<said type="direct" who="Izergil" corresp="Narrator" aloud="true">- Что ты не пошел с ними?
+ 		</said> --  
+ 		<author_comment>кивнув головой, <speech_verb semantic="speech" emotion="question">спросила</speech_verb> старуха Изергиль.</author_comment>
+ 	</speech>
+Время согнуло ее пополам, черные когда-то глаза были тусклы и слезились. Ее сухой голос звучал странно, он хрустел, точно старуха говорила костями.
+	<speech>
+		<said type="direct" who="Narrator" corresp="Izergil" aloud="true">-- Не хочу,
+		</said> 
+		<author_comment>-- <speech_verb semantic="speech" emotion="neutral">ответил</speech_verb> я ей
+		</author_comment>.
+	</speech>
+	<speech>
+		<said type="direct" who="Izergil" corresp="Narrator" aloud="true">-- У!.. стариками родитесь вы, русские. Мрачные все, как демоны... Боятся тебя наши девушки... А ведь ты молодой и сильный...
+		</said> 
+	</speech>
+</text>
+
+
+<text>
+	<speech>
+		<said type="direct" who="Izergil" corresp="Narrator" aloud="true">-- Смотри, вон идет Ларра!
+		</said>
+	</speech>
+Я смотрел, куда старуха указывала своей дрожащей рукой с кривыми пальцами, и видел: там плыли тени, их было много, и одна из них, темней и гуще, чем другие, плыла быстрей и ниже сестер, -- она падала от клочка облака, которое плыло ближе к земле, чем другие, и скорее, чем они.
+	<speech>
+		<said type="direct" who="Narrator" corresp="Izergil" aloud="true">-- Никого нет там!
+		</said> -- 
+		<author_comment><speech_verb semantic="speech" emotion="neutral">сказал</speech_verb> я.
+		</author_comment>
+	</speech>
+	<speech>
+		<said type="direct" who="Izergil" corresp="Narrator" aloud="true">-- Ты слеп больше меня, старухи. Смотри -- вон, темный, бежит степью!
+		</said>
+	</speech>
+Я посмотрел еще и снова не видел ничего, кроме тени.
+	<speech>
+		<said type="direct" who="Narrator" corresp="Izergil" aloud="true">-- Это тень! Почему ты зовешь ее Ларра?
+		</said>
+	</speech>
+</text>
+
+
+<text>
+	<speech>
+		<author_comment>Она снова начала <speech_verb semantic="speech" emotion="neutral">рассказывать</speech_verb> своим хрустящим голосом
+		</author_comment>:
+		<said type="direct" who="Izergil" corresp="Narrator" aloud="true">-- Я жила с матерью под Фальми, на самом берегу Бырлата; и мне было пятнадцать лет, когда он явился к нашему хутору. Был он такой высокий, гибкий, черноусый, веселый. Сидит в лодке и так 
+			<author_comment>звонко <speech_verb semantic="speech" emotion="loud">кричит</speech_verb> он нам в окна:
+			</author_comment> 
+			<said type="direct" who="Undefined" corresp="Izergil" aloud="true">"Эй, нет ли у вас вина... и поесть мне?"
+			</said> 
+		Я посмотрела в окно сквозь ветви ясеней и вижу: рока вся голубая от луны, а он, в белой рубахе и в широком кушаке с распущенными на боку концами, стоит одной ногой в лодке, а другой на берегу. И покачивается, и что-то поет. 
+			<author_comment>Увидал меня, <speech_verb semantic="speech" emotion="neutral">говорит</speech_verb>:
+			</author_comment> 
+			<said type="direct" who="Undefined" corresp="Izergil" aloud="true">"Вот какая красавица живет тут!.. А я и не знал про это!"
+			</said>
+		</said>
+	</speech>
+</text>
+
+
+
+
+
+<text>
+	<speech>
+		<said type="direct" who="Izergil" corresp="Narrator" aloud="true">-- А то еще турка любила я. В гареме у него была, в Скутари. Целую неделю жила, -- ничего... Но скучно стало...-- всё женщины, женщины... Восемь было их у него... Целый день едят, спят и болтают глупые речи... Или ругаются, квохчут, как курицы... Он был уж немолодой, этот турок. Седой почти и такой важный, богатый. Говорил -- как владыка... Глаза были черные... Прямые глаза... Смотрят прямо в душу. Очень он любил молиться. Я его в Букурешти увидала... Ходит по рынку, как царь, и смотрит так важно, важно. Я ему улыбнулась. В тот же вечер меня схватили на улице и привезли к нему. Он сандал и пальму продавал, а в Букурешти приехал купить что-то. 
+			<speech>
+				<said type="direct" who="Turk" corresp="Izergil" aloud="true">"Едешь ко мне?"
+				</said> 
+				<author_comment>-- <speech_verb semantic="speech" emotion="neutral">говорит</speech_verb>.
+				</author_comment> 
+			</speech>
+			<speech>
+				<said type="direct" who="Izergil" corresp="Turk" aloud="true">"О да, поеду!"
+				</said>
+			</speech> -- 
+			<speech>
+				<said type="direct" who="Turk" corresp="Izergil" aloud="true">"Хорошо!"
+				</said>
+			</speech> 
+			И я поехала. Богатый он был, этот турок. И сын у него уже был -- черненький мальчик, гибкий такой... Ему лет шестнадцать было. С ним я и убежала от турка... Убежала в Болгарию, в Лом-Паланку... Там меня одна болгарка ножом ударила в грудь за жениха или за мужа своего -- уже не помню.
+		</said>
+	</speech>
+</text>
+
+
+<text>
+	<speech>
+		<said type="direct" who="Narrator" corresp="Izergil" aloud="true">-- Ну, отправилась ты в Польшу...
+		</said>-- 
+		<author_comment><speech_verb semantic="speech" emotion="neutral">подсказал</speech_verb> я ей
+		</author_comment>.
+	</speech>
+	<speech>
+		<said type="direct" who="Izergil" corresp="Narrator" aloud="true">-- Да... с тем, маленьким полячком. Он был смешной и подлый. Когда ему нужна была женщина, он ластился ко мне котом и с его языка горячий мед тек, а когда он меня не хотел, то щелкал меня словами, как кнутом.
+		</said>
+	</speech>
+</text>
+
+
+<text>Давши нам подписаться, она спрятала лист и тотчас же стала прощаться.
+	<speech>
+		<said type="direct" who="undefined" corresp="Belokurov" aloud="true">— Вы совсем забыли нас, Пётр Петрович,
+		</said>
+		<author_comment> - <speech_verb semantic="speech" emotion="neutral">сказала</speech_verb> она Белокурову, подавая ему руку.
+		</author_comment> 
+		<said type="direct" who="undefined" corresp="Belokurov" aloud="true">— Приезжайте, и если monsieur N. 
+		</said>
+		<author_comment>(она назвала мою фамилию)
+		</author_comment>
+		<said> захочет взглянуть, как живут почитатели его таланта, и пожалует к нам, то мама и я будем очень рады.
+		</said>
+	</speech>Я поклонился.
+</text>
+
+
+<text>Когда она уехала, Пётр Петрович стал рассказывать. Эта девушка, по его словам, была из хорошей семьи и звали её Лидией Волчаниновой, а имение, в котором она жила с матерью и сестрой, так же, как и село на другом берегу пруда, называлось Шелковкой. Отец её когда-то занимал видное место в Москве и умер в чине тайного советника.
+</text>
+
+
+<text>
+	<speech>
+		<said type="direct" who="Lida" corresp="Belokurov" aloud="true">— Не хорошо, Петр Петрович,
+		</said> 
+		<author_comment>— <speech_verb semantic="speech" emotion="neutral">говорила</speech_verb> она укоризненно.
+		</author_comment> — 
+		<said>Не хорошо. Стыдно.
+		</said>
+	</speech>
+	<speech>
+		<said type="direct" who="undefined" corresp="Lida" aloud="true">— Правда, Лида, правда,
+		</said>
+		<author_comment> — <speech_verb semantic="speech" emotion="yes">соглашалась</speech_verb> мать.
+		</author_comment>— 
+		<said>Не хорошо.
+		</said>
+	</speech>
+	<speech>
+		<said type="direct" who="Lida" corresp="Belokurov" aloud="true">— Весь наш уезд находится в руках Балагина,
+		</said> — 
+		<author_comment><speech_verb semantic="speech" emotion="neutral">продолжала</speech_verb> Лида, обращаясь ко мне.
+		</author_comment> — 
+		<said>Сам он председатель управы, и все должности в уезде роздал своим племянникам и зятьям и делает, что хочет. Надо бороться. Молодежь должна составить из себя сильную партию, но вы видите, какая у нас молодежь. Стыдно, Петр Петрович!
+		</said>
+	</speech>
+</text>
+
+
+<text>Белокуров говорил о том, как много приходится работать, когда хочешь стать образцовым сельским хозяином. 
+	<speech>
+		<author_comment>А я <speech_verb semantic="thought" emotion="neutral">думал</speech_verb>: 
+		</author_comment>
+		<said type="direct" who="Narrator" corresp="None" aloud="false">какой это тяжёлый и ленивый малый!
+		</said>
+	</speech> Он, когда говорил о чем-нибудь серьёзно, то с напряжением тянул «э-э-э-э», и работал так же, как говорил, — медленно, всегда опаздывая, пропуская сроки.
+</text>
+
+
+<text>Помнится, когда я ехал по берегу Байкала, мне встретилась девушка бурятка, в рубахе и в штанах из синей дабы, верхом на лошади; 
+	<speech>
+		<author_comment>я <speech_verb semantic="speech" emotion="question">спросил</speech_verb> у неё,
+		</author_comment> 
+		<said type="indirect" who="Narrator" corresp="Buryat" aloud="true">не продаст ли она мне свою трубку, 
+		</said>
+	</speech>и, пока мы говорили, она с презрением смотрела на моё европейское лицо и на мою шляпу, и в одну минуту ей надоело говорить со мной, она гикнула и поскакала прочь.
+</text>
+
+
+
+<text>
+	<speech>
+		<author_comment>Вчера старший дворник <speech_verb semantic="speech" emotion="neutral">докладывал</speech_verb> барыне, что
+		</author_comment> 
+		<said type="indirect" who="Dvornik" corresp="Woman" aloud="true">у него есть на примете парень, самый подходящий.
+		</said>
+	</speech> Устинья еще не видела его; он должен был явиться перед обедом. 
+	<speech>
+		<author_comment>Барыня <speech_verb semantic="speech" emotion="neutral">сказала</speech_verb> ей сегодня утром:
+		</author_comment>
+		<said type="direct" who="Woman" corresp="Ustinya" aloud="true">-- Я в это входить не буду. Вам с ним иметь дело... Заставьте его поработать. И если он годится -- переговорите насчет цены. Мы больше восьми рублей не дадим, с нашей едой, и за угол будем платить -- в дворницкой; а в квартире ему ночевать места, вы сами знаете, нет.
+		</said>
+	</speech>
+</text>
+
+
+<text>Только что Устинья стала приготовлять все, что нужно для этой новой поливки из французской газеты, как кухонную дверь с задней лестницы тихонько приотворили и просунулась белокурая мужская голова.
+	<speech>
+		<said type="direct" who="Ustinya" corresp="Yepifan" aloud="true"> -- Чего надо?
+		</said>
+		<author_comment> -- <speech_verb semantic="speech" emotion="loud">окликнула</speech_verb> она строгим голосом.
+		</author_comment>
+	</speech>
+	<speech>
+		<said type="direct" who="Yepifan" corresp="Ustinya" aloud="true"> -- Это я, матушка, мужик кухольный.
+		</said>
+	</speech>
+</text>
+
+
+<text>Епифаново "мижегородской" -- с буквой "м" -- пришлось по душе Устинье.
+	<speech>
+		<said type="direct" who="Ustinya" corresp="Yepifan" aloud="true">-- Так мы земляки?
+		</said>
+		<author_comment> -- <speech_verb semantic="speech" emotion="neutral">откликнулась</speech_verb> она.
+		</author_comment> -- 
+		<said>Про Горки село слыхал?
+		</said>
+	</speech>
+	<speech>
+		<said type="direct" who="Yepifan" corresp="Ustinya" aloud="true">-- Как не слыхать, матушка!.. Я -- гробиловский. Шелеметевская вотчина была до воли.
+		</said>
+	</speech>Он даже и фамилию Шереметевых произносил с буквой "л" как истый нижегородец.
+	<speech>
+		<said type="direct" who="Ustinya" corresp="Yepifan" aloud="true">-- А я из Горок,
+		</said>
+		<author_comment> -- <speech_verb semantic="speech" emotion="neutral">сказала</speech_verb> Устинья и в первый раз улыбнулась.
+		</author_comment>
+	</speech>
+</text>
+
+
+<text>И план встал перед Устиньей во всей своей исполнимости. До переезда барышни с мальчиком на дачу оставалось уже всего дней десять-двенадцать. В этот промежуток и надо было все "произвести".
+	<speech>
+		<author_comment>У нее ни разу, слушая его, не соскочил с губ <speech_verb semantic="speech" emotion="loud">возглас</speech_verb>:
+		</author_comment> 
+		<said type="direct" who="Ustinya" corresp="Yepifan" aloud="true">"Епифан! Да ты и вправду?"
+		</said>
+	</speech> Она прекрасно понимала, что все это "вправду".
+</text>
+
+
+<text>С жены Устинья и начала.
+	<speech>
+		<said type="direct" who="Ustinya" corresp="Yepifan" aloud="true">-- Ведь я, до сих пор, не знаю, Епифан,
+		</said>
+		<author_comment> -- <speech_verb semantic="speech" emotion="neutral">заговорила</speech_verb> она, степенным, почти суровым голосом,
+		</author_comment> -- 
+		<said type="direct" who="Ustinya" corresp="Yepifan" aloud="true">в каких ты чувствах к своей фамилии? Может, ты так только говоришь, а между прочим для тебя твоя баба -- большая привязка, и ты от нее и по доброй воле не отойдешь.
+		</said>
+	</speech>
+	<speech>
+		<said type="direct" who="Yepifan" corresp="Ustinya" aloud="true">-- Куда же я отойду? Да и зачем? Пока по городам буду жить, кто же меня станет тревожить?.. Там ведь тоже деньга-то нужна, а от меня идет хорошая благостыня.
+		</said>
+	</speech>
+</text>
+
+
+<text>
+	<speech>
+		<said type="direct" who="Man" corresp="Colonel" aloud="true">- Отец ты наш...
+		</said> - 
+		<author_comment><speech_verb semantic="speech" emotion="yes">подхватил</speech_verb> другой мужичок,
+		</author_comment> - 
+		<said type="direct" who="Man" corresp="Colonel" aloud="true">ведь мы люди темные. Может, ты майор, аль полковник, аль само ваше сиятельство, - как и величать-то тебя не ведаем.
+		</said>
+	</speech>
+	<speech>
+		<said type="direct" who="Foma" corresp="Undefined" aloud="true">- Пехтерь! - 
+		</said>
+		<author_comment><speech_verb semantic="speech" emotion="neutral">повторил</speech_verb> Фома Фомич, однако ж смягчился.
+		</author_comment> - 
+		<said type="direct" who="Foma" corresp="Undefined" aloud="true">Жалованье жалованью рознь, посконная ты голова! Другой и в генеральском чине, да ничего не получает, - значит, не за что: пользы царю не приносит.
+		</said>
+	</speech>
+</text>
+
+
+<text>Фома Фомич, по правде, и сам не знал, зачем сделал такой вопрос. Но молчание и смущение дяди тотчас же его раззадорили. Он, прежде терпеливый и забитый, теперь вспыхивал как порох при каждом малейшем противоречии. Молчание дяди показалось ему обидным, и он уже теперь настаивал на ответе.
+	<speech>
+		<said type="direct" who="Foma" corresp="Colonel" aloud="true">- Отвечайте же: горит в вас искра или нет?
+		</said>
+	</speech>
+Дядя мнется, жмется и не знает, что предпринять.
+	<speech>
+		<said type="direct" who="Foma" corresp="Colonel" aloud="true">- Позвольте вам заметить, что я жду,
+		</said> - 
+		<author_comment><speech_verb semantic="speech" emotion="neutral">замечает</speech_verb> Фома обидчивым голосом.
+		</author_comment>
+	</speech>
+</text>
+
+
+<text>Шуму и крику в доме он боялся как огня и тотчас же всем уступал и всему подчинялся. Уступал он из какого-то застенчивого добродушия, из какой-то стыдливой деликатности, 
+	<speech>
+		<said type="direct" who="Colonel" corresp="Undefined" aloud="true">"чтоб уже так"
+		</said>, 
+		<author_comment><speech_verb semantic="speech" emotion="neutral">говорил</speech_verb> он скороговоркою, отдаляя от себя все посторонние упреки в потворстве и слабости
+		</author_comment> - 
+		<said type="direct" who="Colonel" corresp="Undefined" aloud="true">"чтоб уж так ... чтоб уж все были довольны и счастливы!"
+		</said>
+	</speech>
+</text>
+
+
+<text>
+	<speech>
+		<said type="direct" who="Alexandra" corresp="Matryona" aloud="true">-- Как ты себя чувствуешь, Матрена?
+		</said> -- 
+		<author_comment><speech_verb semantic="speech" emotion="question">спросила</speech_verb> она, наклонившись над лежанкой.
+		</author_comment>
+	</speech>
+	<speech>
+		<said type="direct" who="Matryona" corresp="Alexandra" aloud="true">-- О-ох! 
+		</said>-- 
+		<author_comment><speech_verb semantic="speech" emotion="sad">простонала</speech_verb> старушка, всмотревшись в Александру Павловну.
+		</author_comment> -- 
+		<said type="direct" who="Matryona" corresp="Alexandra" aloud="true">Плохо, плохо, родная! Смертный часик пришел, голубушка!
+		</said>
+	</speech>
+	<speech>
+		<said type="direct" who="Alexandra" corresp="Matryona" aloud="true">-- Бог милостив, Матрена: может быть, ты поправишься. Ты приняла лекарство, которое я тебе прислала?
+		</said>
+	</speech>
+</text>
+
+
+<text>
+	<speech>
+		<said type="direct" who="Darya" corresp="Pandalevsky" aloud="true">-- А! Constantin! 
+		</said> -- 
+		<author_comment><speech_verb semantic="speech" emotion="neutral">проговорила</speech_verb> Дарья Михайловна, как только Пандалевский вошел в гостиную. -- 
+		</author_comment>
+		<said type="direct" who="Darya" corresp="Pandalevsky" aloud="true">Аlexandrine будет?
+		</said>
+	</speech>
+	<speech>
+		<said type="direct" who="Pandalevsky" corresp="Darya" aloud="true"> -- Александра Павловна велели вас благодарить и за особенное удовольствие себе поставляют,
+		</said>
+		<author_comment> -- <speech_verb semantic="speech" emotion="no">возразил</speech_verb>Константин Диомидыч, приятно раскланиваясь на все стороны и прикасаясь толстой, но белой ручкой с ногтями, остриженными треугольником, к превосходно причесанным волосам.
+		</author_comment>
+	</speech>
+	<speech>
+		<said type="direct" who="Darya" corresp="Pandalevsky" aloud="true"> -- И Волынцев тоже будет?
+		</said> 
+	</speech>
+	<speech>
+		<said type="direct" who="Pandalevsky" corresp="Darya" aloud="true">-- И они-с.
+		</said> 
+	</speech>
+</text>
+
+
+<text>
+	<speech>
+		<said type="direct" who="Darya" corresp="Afrikan" aloud="true">-- Знаете ли что, Африкан Семеныч, 
+		</said> -- 
+		<author_comment><speech_verb semantic="speech" emotion="neutral">начала</speech_verb> Дарья Михайловна
+		</author_comment>, -- 
+		<said type="direct" who="Darya" corresp="Afrikan" aloud="true">вы недаром так озлоблены на женщин. Какая-нибудь, должно быть, вас...
+		</said>
+	</speech>
+	<speech>
+		<said type="direct" who="Afrikan" corresp="Darya" aloud="true"> -- Обидела, вы хотите сказать?
+		</said> -- 
+		<author_comment><speech_verb semantic="speech" emotion="interrupt">перебил</speech_verb> ее Пигасов.
+		</author_comment>
+	</speech>
+</text>
+
+
+<text>
+	<speech>
+		<author_comment>Потап Алексеевич, лежа в помятой рубашке на кровати за ширмой, курил крепкие папиросы и морщился, <speech_verb semantic="speech" emotion="neutral">говоря</speech_verb> с досадой:
+		</author_comment>
+		<said type="direct" who="Potap" corresp="None" aloud="true">— Фу, как это все неловко вышло… не офицеры здесь, а бог знает что. Я давно говорил: запасный офицер, будь он хоть сам полковник, карту в руки взять не умеет и больше все лезет в лицо. А я тоже хорош — с первого раза закатил им казацкий штос… Нет, нет, сегодня же марш отсюда…
+		</said>
+	</speech>
+</text>
+
+
+<text>Половой тотчас вошел, накинув для уважения поверх тиковых штанов и косоворотки фрак с продранным локтем.
+	<speech>
+		<said type="direct" who="Potap" corresp="Servant" aloud="true">— Что это у тебя, братец, прыщи на носу?
+		</said> — 
+		<author_comment><speech_verb semantic="speech" emotion="neutral">сказал</speech_verb> Потап, с отвращением глядя на полового.
+		</author_comment>
+	</speech>
+	<speech>
+		<said type="direct" who="Servant" corresp="Potap" aloud="true">— Бог дал-с, 
+		</said>— 
+		<author_comment><speech_verb semantic="speech" emotion="neutral">ответил</speech_verb> тот и почесал босой ногой ногу, приготовляясь этим к долгому разговору.
+		</author_comment>
+	</speech>
+</text>
+
+
+<text>
+	<speech>
+		<said type="direct" who="Potap" corresp="None" aloud="true">— Теперь всего можно ожидать,
+		</said> — 
+		<author_comment><speech_verb semantic="speech" emotion="neutral">сказал</speech_verb>, наконец, Потап, поджав под диванчик ногу.
+		</author_comment> — 
+		<said type="direct" who="Potap" corresp="None" aloud="true"> В сущности, что есть нравственность? — выдумка дам и разночинцев, а мы выше мещанских понятий. Нужно только уметь уважать себя.
+		</said>
+	</speech>
+Так рассуждал Потап, любя иногда отвлеченные мысли, а за дверью офицер тихонько позвякивал шпорой.
+</text>
+
+
+<text>
+	<speech>
+		<said type="direct" who="Potap" corresp="Pryanik" aloud="true">— Ну,
+		</said> — 
+		<author_comment><speech_verb semantic="speech" emotion="neutral">сказал</speech_verb> Потап,
+		</author_comment> 
+		<said type="direct" who="Potap" corresp="Pryanik" aloud="true">— уж и без ума… Вы все славные ребята; мы еще перекинемся. А сведите-ка меня, покажите ваших дам; кстати, вчера я видел мельком прехорошенькую бабенку.
+		</said>
+	</speech>
+	<speech>
+		<said type="direct" who="Pryanik" aloud="true">— Боже мой, это была Наденька Храпова. Я весь в поту, когда думаю о ней.
+		</said>
+	</speech>
+Пряник действительно, ослабев, сел на стул. А Потап принялся громко смеяться.
+</text>
+
+
+<text>Половой сейчас же выскочил, унося колоду. Потап раскрыл стол, бросил на диван медвежье одеяло, попрыскал в комнате одеколоном и раскрыл форточку, заложив руки за голову. На бороду ему и лицо сели снежинки. 
+	<speech>
+		<author_comment>Потап вдохнул пряный и морозный холод и <speech_verb semantic="speech" emotion="neutral">сказал</speech_verb>:
+		</author_comment>
+		<said type="direct" who="Potap" corresp="Potap" aloud="true">— Потап, ты дурень, она погубит тебя. Бедная девочка. А все-таки ей нужно узнать счастье.
+		</said>
+	</speech>
+</text>
+
+
+<text>
+	<speech>
+		<author_comment>Князь взглянул на него, как будто припоминая, где он и что с ним делается, и после минутного молчания <speech_verb semantic="speech" emotion="neutral">сказал</speech_verb>:
+		</author_comment>
+		<said type="direct" who="Knyaz" corresp="Friend" aloud="true">- Виноват, друг мой! Я не знаю... Что бишь такое?
+		</said>
+	</speech>
+	<speech>
+		<said type="direct" who="Friend" corresp="Knyaz" aloud="true">- Ничего!
+		</said> - 
+		<author_comment><speech_verb semantic="speech" emotion="neutral">отвечал</speech_verb> друг.
+		</author_comment> 
+		<said type="direct" who="Friend" corresp="Knyaz" aloud="true">- Только пора обедать. Ведь у сестрицы твоей ждать не будут, а если застанем ее за столом, то придется выслушать длинную рацею твоей мачехи о разврате рода человеческого, обедающего ныне после полудня.
+		</said>
+	</speech>
+</text>
+
+
+<text>
+	<speech>
+		<said type="direct" who="Knyaz" corresp="Friend" aloud="true">Что делать, Хвалынский,
+		</said> - 
+		<author_comment><speech_verb semantic="speech" emotion="neutral">отвечал</speech_verb> князь,
+		</author_comment> - 
+		<said type="direct" who="Knyaz" corresp="Friend" aloud="true">никто не волен в своем нраве, когда нрав этот получил направление с первых дней его жизни. Ты знаешь, что младенчество мое протекло среди ужасных происшествий, что я в детстве был очевидцем таких явлений, каких иной во всю жизнь не встретит, потом осиротел, остался одинок и изныл бы душою, если б не сохранила меня дружба. Она вспыхнула в наших сердцах в одну секунду, когда нас привезли в корпус, к генералу Пурпуру, тебя - изо Пскова, меня - из Симбирска.
+		</said>
+	</speech>
+</text>
+
+
+<text>
+	<speech>
+		<said type="direct" who="Duchess" corresp="Knyaz" aloud="true">- Ах, милый друг Алеша,
+		</said> - 
+		<author_comment><speech_verb semantic="speech" emotion="loud">вскрикнула</speech_verb> княгиня, приподнимаясь с канапе.
+		</author_comment>
+	</speech> Князь Алексей подошел к ней и с учтивостью и ласковым взглядом поцеловал ей руку.
+	<speech>
+		<said type="direct" who="Knyaz" corresp="Duchess" aloud="true">- Каковы вы в своем здоровье, маменька?
+		</said>
+	</speech>
+Между тем Хвалынский, готовясь в свою очередь подойти к руке, исподтишка модным востроносым сапогом толкнул спавшую моську. Она завизжала, а другая залаяла.
+	<speech>
+		<said type="direct" who="Duchess" corresp="Object" aloud="true">- Тише, проклятые!
+		</said> - 
+		<author_comment><speech_verb semantic="speech" emotion="loud">закричала</speech_verb> княгиня, замахнувшись на них табакеркою.
+		</author_comment> 
+		<said type="direct" who="Duchess" corresp="Knyaz" aloud="true">- Слава богу, душенька! Вчера дурнота прошла от капель Христиана Карловича; я сегодня у Всех Скорбящих всю раннюю обедню отстояла, так теперь что-то устала. Да это пройдет. А ты, голубчик, здоров ли, ангел мой?
+		</said>
+	</speech>
+</text>
+
+
+<text>
+	<speech>
+		<author_comment>Не знаем, что последовало бы за этим, если б не вошел в комнату низенький, толстый дворецкий в сером фраке с <speech_verb semantic="speech" emotion="loud">объявлением</speech_verb>:
+		</author_comment> 
+		<said type="direct" who="Servant" corresp="People" aloud="true">"Кушанье поставлено!"
+		</said>.
+	</speech>
+</text>
+
+
+<text>Дорогою Хвалынский дал полную волю смеху, который так долго удерживал в границах.
+	<speech>
+		<said type="direct" who="Friend" corresp="Knyaz" aloud="true">- Ай да жених! Ай да супруг! И гордая генерал-поручица, покоренная любовною страстью, выходит замуж за капитана! Превосходительство и благородие! О любовь! Любовь! Какие штуки ты творишь на свете!
+		</said>
+	</speech>
+	<speech>
+		<said type="direct" who="Knyaz" corresp="Friend" aloud="true">- Тебе смешно,
+		</said> - 
+		<author_comment><speech_verb semantic="speech" emotion="neutral">сказал</speech_verb> князь,
+		</author_comment> - 
+		<said type="direct" who="Knyaz" corresp="Friend" aloud="true">а мне так очень больно! Алевтина, умная, расчетливая, гордая Алевтина, выбрала этого болвана! И так скоро, так неожиданно! Непонятно и крайне обидно!
+		</said>
+	</speech>
+</text>
+
+
+<text>
+	<speech>
+		<said who="Commandant" corresp="People" type="direct" aloud="true">-- Принять надлежащие меры!
+		</said> 
+		<author_comment>-- <speech_verb semantic="speech" emotion="neutral">сказал</speech_verb> комендант, снимая очки и складывая бумагу.
+		</author_comment> 
+		<said who="Commandant" corresp="People" type="direct" aloud="true">-- Слышь ты, легко сказать. Злодей-то видно силен; а у нас всего сто тридцать человек, не считая казаков, на которых плоха надежда, не в укор буди тебе сказано, Максимыч.
+		</said> 
+		<author_comment>(Урядник усмехнулся.)
+		</author_comment> 
+		<said who="Commandant" corresp="People" type="direct" aloud="true">Однако делать нечего, господа офицеры! Будьте исправны, учредите караулы да ночные дозоры; в случае нападения запирайте ворота да выводите солдат. Ты, Максимыч, смотри крепко за своими казаками. Пушку осмотреть да хорошенько вычистить. А пуще всего содержите всё это в тайне, чтоб в крепости никто не мог о том узнать преждевременно.
+		</said>
+	</speech>
+Раздав сии повеления, Иван Кузмич нас распустил. Я вышел вместе со Швабриным, рассуждая о том, что мы слышали. 
+	<speech>
+		<said who="Author" corresp="Shvabrin" type="direct" aloud="true">"Как ты думаешь, чем это кончится?"
+		</said> 
+		<author_comment>-- <speech_verb semantic="speech" emotion="question">спросил</speech_verb> я его.
+		</author_comment> 
+	</speech>
+	<speech>
+		<said who="Shvabrin" corresp="Author" type="direct" aloud="true">"Бог знает,
+		</said>
+		<author_comment>-- <speech_verb semantic="speech" emotion="neutral">отвечал</speech_verb> он;
+		</author_comment> 
+		<said who="Shvabrin" corresp="Author" type="direct" aloud="true">-- посмотрим. Важного покамест еще ничего не вижу. Если же..."
+		</said>
+	</speech> Тут он задумался и в рассеянии стал насвистывать французскую арию.
+</text>
+
+
+<text>
+	Но между тем странное чувство отравляло мою радость: мысль о злодее, обрызганном кровию стольких невинных жертв, и о казни, его ожидающей, тревожила меня поневоле: 
+	<speech>
+		<said who="Author" corresp="None" type="direct" aloud="false">"Емеля, Емеля!
+		</said> -- 
+		<author_comment><speech_verb semantic="thought" emotion="neutral">думал</speech_verb> я с досадою;--
+		</author_comment> 
+		<said who="Author" corresp="None" type="direct" aloud="false">зачем не наткнулся ты на штык или не подвернулся под картечь? Лучше ничего не мог бы ты придумать".
+		</said>
+	</speech> Что прикажете делать? Мысль о нем неразлучна была во мне с мыслию о пощаде, данной мне им в одну из ужасных минут его жизни, и об избавлении моей невесты из рук гнусного Швабрина.
+</text>
+
+
+<text>
+	<speech>
+		<author_comment>Даже Анны Михайловны кухарка, рубившая котлетку прямо против окна, из которого видно было каждое движение Бобки, преспокойно работала сечкой и <speech_verb semantic="song" emotion="loud">распевала</speech_verb>:
+		</author_comment>
+		<said type="direct" who="Cook" corresp="None" aloud="true">Полюбила я любовничка,
+		Канцелярского чиновничка;
+		По головке его гладила,
+		Волоса ему помадила.
+		</said>
+	</speech>
+</text>
+
+
+<text>
+	<speech>
+		<author_comment>
+		Все это произошло так скоро, что, когда Долинский с Бобкой на руках проходил через кухню, кухарка еще не кончила песню про любовничка - канцелярского чиновничка и <speech_verb semantic="speech" emotion="neutral">рассказывала</speech_verb>, как 
+		</author_comment>
+		<said type="indirect" who="Cook" corresp="None" aloud="true">она.
+		Напоила его мятою,
+		Обложила кругом ватою
+		</said>.
+	</speech>
+</text>
+
+
+<text>
+	<speech>
+		<said type="direct" who="Vyrvich" corresp="Dolinsky" aloud="true">- Миндаль вам за спасение погибавшего
+		</said>,- 
+		<author_comment><speech_verb semantic="speech" emotion="neutral">проговорил</speech_verb> шутливо Вырвич, подавая Долинскому выколупнутую с булки поджаренную миндалину.
+		</author_comment>
+	</speech>
+Анна Михайловна вспыхнула.
+	<speech>
+		<said type="direct" who="Anna" corresp="Dolinsky" aloud="true">- Страшно! У вас голова могла закружиться
+		</said >,- 
+		<author_comment> - <speech_verb semantic="speech" emotion="neutral">говорила</speech_verb> она, обращаясь к Долинскому 
+		</author_comment>.
+	</speech>
+</text>
+
+
+<text>Я начал переводить планку на двести пятьдесят метров и услышал команды, доносившиеся  из блиндажа командира  дивизиона.  
+	<speech>
+		<said type="direct" who="Officer" corresp="all" aloud="true"> "Залечь! Всем  залечь!"
+		</said>  --
+		<author_comment> <speech_verb semantic="speech" emotion="loud">разнеслось</speech_verb> по опушке 
+		</author_comment>.
+	</speech>
+</text>
+
+
+<text>
+	<speech>
+		<said type="direct" who="Officer" corresp="Narrator" aloud="true">"Бахтин,  а Бахтин,
+		</said> --  
+		<author_comment>сдерживаясь  изо  всех сил, глухо  и грустно <speech_verb semantic="speech" emotion="neutral">заговорил</speech_verb>  комбриг.
+		</author_comment> --
+		<said type="direct" who="Officer" corresp="Narrator" aloud="true">  Если  мы будем так воевать и дальше --  к  вечеру у  нас не останется бойцов и  нам с тобой да с моими доблестными помощниками самим придется  отбиваться  от этих вшивиков... 
+		</said>
+	</speech>
+</text>
+
+
+<text>Поручик долго не мог понять: куда исчезло седло и что это за такое  незнакомое русское  слово  "украли"?  
+	<speech>
+		<author_comment>И тогда кто-то опять  же  из огневиков  обнадеживающе похлопал чеха по плечу</author_comment>: 
+		<said type="direct" who="Undefined" corresp="Czech" aloud="true">"Ничего,  ничего. Придем  к вам, объясним и научим!"
+		</said>
+	</speech>
+</text>
+
+
+<text>
+	<speech>
+		<author_comment>До нас <speech_verb semantic="speech" emotion="neutral">доносило</speech_verb>
+		</author_comment>: 
+		<said type="direct" who="undefined" corresp="all" aloud="true">"Раздолбаи! Размундяи! Раз..."
+		</said>, 
+		<author_comment> ну и  тому подобное,  привычное нашему  брату, если он  давно пребывает на поле брани. 
+		</author_comment>
+	</speech>
+</text>
+
+
+<text>
+	<speech>
+		<author_comment> Анкудин нахмурился, потер рукою лоб, окрапленный мелкими каплями
+		</author_comment>: 
+		<said type="direct" who="Ankudin" corresp="Lisa" aloud="true">    -- Постой, Лизавета! Ты к чему про Сталина-то? 
+		</said> 
+	</speech>   
+	<speech> 
+		<said type="direct" who="Lisa" corresp="Ankudin" aloud="true">-- Да просто  так,  к слову пришлось. Уж больно ты правильный, и Сталин твой  правильный,  а немцу пол-России  отдал, немец Кубань  ржой поразил, до Кавказа добрался, народу тьма погибла, да еще  спогибнет сколько!
+		</said>
+	</speech>
+</text>
+
+
+
+<text>
+	<speech>
+		<said type="direct" who="Darya" corresp="Rudin" aloud="true">-- Садитесь... очень рада,
+		</said> -- 
+		<author_comment><speech_verb semantic="speech" emotion="neutral">промолвила</speech_verb> Дарья Михайловна и, познакомив его со всем обществом, <speech_verb semantic="speech" emotion="question">спросила</speech_verb>,
+		</author_comment> 
+		<said type="indirect" who="Darya" corresp="Rudin" aloud="true">здешний ли он, или заезжий.
+		</said> 
+	</speech>
+	<speech>
+		<said type="direct" who="Rudin" corresp="Darya" aloud="true">-- Мое имение в Т...ой губернии,
+		</said> -- 
+		<author_comment> <speech_verb semantic="speech" emotion="neutral">отвечал</speech_verb> Рудин, держа шляпу на коленях,
+		</author_comment> 
+		<said type="direct" who="Rudin" corresp="Darya" aloud="true">-- а здесь я недавно. Я приехал по делу и поселился пока в вашем уездном городе. 
+		</said>
+	</speech>
+	<speech>
+		<said type="direct" who="Darya" corresp="Rudin" aloud="true">-- У кого? 
+		</said>
+	</speech>
+	<speech>
+		<said type="direct" who="Rudin" corresp="Darya" aloud="true">-- У доктора. Он мой старинный товарищ по университету.
+		</said>
+	</speech>
+</text>
+
+
+
+<text>
+	<speech>
+		<said type="direct" who="Rudin" corresp="Afrikan" aloud="true">-- Прекрасно!
+		</said> -- 
+		<author_comment><speech_verb semantic="speech" emotion="neutral">промолвил</speech_verb> Рудин,
+		</author_comment> -- 
+		<said>стало быть, по-вашему, убеждений нет?
+		</said>
+	</speech>
+	<speech>
+		<said type="direct" who="Afrikan" corresp="Rudin" aloud="true">-- Нет -- и не существует.
+		</said>
+	</speech>
+    <speech>
+    	<said type="direct" who="Rudin" corresp="Afrikan" aloud="true">-- Это ваше убеждение?
+    	</said>
+    </speech>
+    <speech>
+    	<said type="direct" who="Afrikan" corresp="Rudin" aloud="true">-- Да.
+    	</said>
+    </speech>
+    <speech>
+    	<said type="direct" who="Rudin" corresp="Afrikan" aloud="true">-- Как же вы говорите, что их нет? Вот вам уже одно на первый случай.
+    	</said>
+    </speech>
+    Все в комнате улыбнулись и переглянулись.
+    <speech>
+    	<said type="direct" who="Afrikan" corresp="Rudin" aloud="true">-- Позвольте, позвольте, однако, -- начал было Пигасов...
+    	</said>
+    </speech>
+	<speech>
+		<author_comment>Но Дарья Михайловна захлопала в ладоши, <speech_verb semantic="speech" emotion="loud">воскликнула</speech_verb>:
+		</author_comment> 
+		<said type="direct" who="Darya" corresp="undefined" aloud="true">" Браво, браво, разбит Пигасов, разбит!"
+		</said> -- 
+		<author_comment>и тихонько вынула шляпу из рук Рудина.
+		</author_comment>
+	</speech>
+    <speech>
+    	<said type="direct" who="Afrikan" corresp="Darya" aloud="true">-- Погодите радоваться, сударыня: успеете!
+    	</said> -- 
+    	<author_comment><speech_verb semantic="speech" emotion="neutral">заговорил</speech_verb> с досадой Пигасов.
+    	</author_comment> -- 
+    	<said type="direct" who="Afrikan" corresp="Rudin" aloud="true">Недостаточно сказать с видом превосходства острое словцо: надобно доказать, опровергнуть... Мы отбились от предмета спора.
+    	</said>
+    </speech>
+    <speech>
+    	<said type="direct" who="Rudin" corresp="Afrikan" aloud="true">-- Позвольте,
+    	</said> -- 
+    	<author_comment>хладнокровно <speech_verb semantic="speech" emotion="neutral">заметил</speech_verb> Рудин,
+    	</author_comment> -- 
+    	<said type="direct" who="Rudin" corresp="Afrikan" aloud="true">дело очень просто. Вы не верите в пользу общих рассуждений, вы не верите в убеждения...
+    	</said>
+    </speech>
+    <speech>
+    	<said type="direct" who="Afrikan" corresp="Rudin" aloud="true">-- Не верю, не верю, ни во что не верю.
+    	</said>
+    </speech>
+    <speech>
+		<said type="direct" who="Rudin" corresp="Afrikan" aloud="true">-- Очень хорошо. Вы скептик.
+    	</said>
+    </speech>
+    <speech>
+    	<said type="direct" who="Afrikan" corresp="Rudin" aloud="true">-- Не вижу необходимости употреблять такое ученое слово. Впрочем...
+    	</said>
+    </speech>
+    <speech>
+    	<said type="direct" who="Darya" corresp="Afrikan" aloud="true">-- Не перебивайте же!
+    	</said> -- 
+    	<author_comment><speech_verb semantic="speech" emotion="interrupt">вмешалась</speech_verb> Дарья Михайловна.
+    	</author_comment>
+    </speech>
+    <speech>
+    	<said type="direct" who="Pandalevsky" corresp="None" aloud="false">"Кусь, кусь, кусь!"
+    	</said> -- 
+    	<author_comment><speech_verb semantic="speech" emotion="neutral">сказал</speech_verb> про себя в это мгновенье Пандалевский и весь осклабился.
+    	</author_comment>
+    </speech>
+</text>
+
+
+<text>Михаил Аверьяныч уважает и любит Андрея Ефимыча за образованность и благородство души, к прочим же обывателям относится свысока, как к своим подчиненным.
+	<speech>
+		<said type="direct" who="Mikhail" corresp="Andrey" aloud="true">— А вот и я!
+		</said>
+		<author_comment> —  <speech_verb semantic="speech" emotion="neutral">говорит</speech_verb> он, входя к Андрею Ефимычу.
+		</author_comment> 
+		<said type="direct" who="Mikhail" corresp="Andrey" aloud="true">— Здравствуйте, мой дорогой! Небось я уже надоел вам, а?
+		</said>
+	</speech>
+	<speech>
+		<said type="direct" who="Andrey" corresp="Mikhail" aloud="true">— Напротив, очень рад,
+		</said>
+		<author_comment> — <speech_verb semantic="speech" emotion="neutral">отвечает</speech_verb> ему доктор.
+		</author_comment> 
+		<said type="direct" who="Andrey" corresp="Mikhail" aloud="true">— Я всегда рад вам.
+		</said>
+	</speech>
+Приятели садятся в кабинете на диван и некоторое время молча курят.
+	<speech>
+		<said type="direct" who="Andrey" corresp="Daria" aloud="true">— Дарьюшка, как бы нам пива!
+		</said>
+		<author_comment> — <speech_verb semantic="speech" emotion="neutral">говорит</speech_verb> Андрей Ефимыч.
+		</author_comment>
+	</speech>
+</text>
+
+
+
+
+<text>
+	<speech>
+		<said type="direct" who="Mikhail" corresp="Andrey" aloud="true"> — Эх!
+		</said>
+		<author_comment> —  <speech_verb semantic="action" emotion="sad">вздыхает</speech_verb> Михаил Аверьяныч. 
+		</author_comment>
+		<said type="direct" who="Mikhail" corresp="Andrey" aloud="true">— Захотели от нынешних ума!
+		</said>
+	</speech>
+	<speech>
+		<author_comment>И он <speech_verb semantic="speech" emotion="neutral">рассказывает</speech_verb>,
+		</author_comment> 
+		<said type="indirect" who="Mikhail" corresp="Andrey" aloud="true">как жилось прежде здорово, весело и интересно, какая была в России умная интеллигенция и как высоко она ставила понятия о чести и дружбе. Давали деньги взаймы без векселя, и считалось позором не протянуть руку помощи нуждающемуся товарищу. А какие были походы, приключения, стычки, какие товарищи, какие женщины! А Кавказ — какой удивительный край! А жена одного батальонного командира, странная женщина, надевала офицерское платье и уезжала по вечерам в горы, одна без проводника. Говорят, что в аулах у нее был роман с каким-то князьком.
+		</said>
+	</speech>
+	<speech> 
+		<said type="direct" who="Daria" corresp="None" aloud="true">  — Царица небесная, матушка... 
+		</said>
+		<author_comment>—<speech_verb semantic="action" emotion="sad">вздыхает</speech_verb> Дарьюшка.
+		</author_comment>
+	</speech>
+</text>
+
+
+
+
+<text>Не глядя собеседнику в глаза, тихо и с паузами, Андрей Ефимыч продолжает говорить об умных людях и беседах с ними, 
+	<speech>
+		<author_comment>а Михаил Аверьяныч внимательно слушает его и <speech_verb semantic="speech" emotion="yes">соглашается</speech_verb>:
+		</author_comment>
+		<said type="direct" who="Mikhail" corresp="Andrey" aloud="true"> "Совершенно верно".
+		</said>
+	</speech>
+	<speech>
+		<said type="direct" who="Mikhail" corresp="Andrey" aloud="true">— А вы не верите в бессмертие души?
+		</said>
+		<author_comment> — вдруг <speech_verb semantic="speech" emotion="question">спрашивает</speech_verb> почтмейстер.
+		</author_comment>
+	</speech>
+	<speech>
+		<said type="direct" who="Andrey" corresp="Mikhail" aloud="true">— Нет, уважаемый Михаил Аверьяныч, не верю и не имею основания верить.
+		</said>
+	</speech>
+	<speech>
+		<said type="direct" who="Mikhail" corresp="Andrey" aloud="true">— Признаться, и я сомневаюсь. А хотя, впрочем, у меня такое чувство, как будто я никогда не умру. Ой, думаю себе, старый хрен, умирать пора! А в душе какой-то голосочек: не верь, не умрешь!..
+		</said>
+	</speech>
+</text>

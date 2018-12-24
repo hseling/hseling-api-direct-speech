@@ -1,14 +1,15 @@
 from os import environ
 from io import BytesIO, SEEK_END, SEEK_SET
 from uuid import uuid4
-
+import os
+import json
+from bs4 import BeautifulSoup
 from celery import Celery, result
 from werkzeug.utils import secure_filename
 
 from minio import Minio
 from minio.error import (ResponseError, BucketAlreadyOwnedByYou,
                          BucketAlreadyExists)
-
 
 CELERY_BROKER_URL = environ["CELERY_BROKER_URL"]
 CELERY_RESULT_BACKEND = environ["CELERY_RESULT_BACKEND"]
@@ -26,6 +27,7 @@ ERROR_NO_FILE_PART = "ERROR_NO_FILE_PART"
 ERROR_NO_SELECTED_FILE = "ERROR_NO_SELECTED_FILE"
 ERROR_NO_SUCH_FILE = "ERROR_NO_SUCH_FILE"
 ERROR_NO_QUERY_TYPE_SPECIFIED = "ERROR_NO_QUERY_TYPE_SPECIFIED"
+ERROR_NO_TAG_SPECIFIED = "ERROR_NO_TAG_SPECIFIED"
 
 ENDPOINT_ROOT = "ENDPOINT_ROOT"
 ENDPOINT_SCRAP = "ENDPOINT_SCRAP"
@@ -33,7 +35,6 @@ ENDPOINT_UPLOAD = "ENDPOINT_UPLOAD"
 ENDPOINT_PROCESS = "ENDPOINT_PROCESS"
 ENDPOINT_STATUS = "ENDPOINT_STATUS"
 ENDPOINT_QUERY = "ENDPOINT_QUERY"
-
 
 RESTRICTED_MODE = environ["RESTRICTED_MODE"]
 
@@ -103,6 +104,11 @@ def get_file(filename):
 
 
 @with_minio
+def get_file_object(filename):
+    return minioClient.get_object(MINIO_BUCKET_NAME, filename)
+
+
+@with_minio
 def list_files(**kwargs):
     return list(str(file_id.object_name) for file_id
                 in minioClient.list_objects(MINIO_BUCKET_NAME, **kwargs))
@@ -160,6 +166,32 @@ def add_processed_file(processed_file_id, contents, extension=None):
     if extension:
         filename = PROCESSED_PREFIX + processed_file_id + ("." + extension)
     else:
-        filename = ""
+        filename = PROCESSED_PREFIX + processed_file_id
     put_file(filename, contents)
     return filename
+
+
+def get_gold(output_type):
+    gold_filename = "static/gold.{}".format(output_type)
+    return gold_filename, os.path.basename(gold_filename)
+
+
+def get_gold_statistics():
+    gold_filename = "static/gold_statistics.json"
+    with open(gold_filename, 'r', encoding='utf-8') as file:
+        return json.load(file)
+
+
+def get_gold_examples(limit):
+    gold_filename = "static/gold_examples.xml"
+    with open(gold_filename, 'r', encoding='utf-8') as file:
+        tree = BeautifulSoup('<text>' + file.read() + '</text>', "lxml")
+        if limit is None:
+            return [str(i) for i in tree.findAll("text")]
+        else:
+            return [str(i) for i in tree.findAll("text")][:limit]
+
+
+def read_file(path):
+    with open(path, 'r', encoding='utf-8') as file:
+        return file.read()
