@@ -12,8 +12,8 @@ class FileReader(PipelineStep):
         return self.__delete_newlines(text)
 
     def __delete_newlines(self, text):
-        text1 = re.sub(' +', ' ', text)
+        text1 = re.sub(r' +', ' ', text)
         text2 = re.sub(r'\n(?P<cap> [а-яё])', r'\g<cap>', text1)
         text3 = re.sub(r'(?P<punc>[^!\?\.\:])\n', r'\g<punc>', text2)
-        text4 = re.sub('[  ]+', ' ', text3)
+        text4 = re.sub(r'[  ]+', ' ', text3)
         return text4
