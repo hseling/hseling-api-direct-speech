@@ -4,6 +4,7 @@ from sentimental import Sentimental
 
 sent = Sentimental()
 
+
 class SaidCommentTagger(PipelineStep):
     SEPARATOR = r'»,?[ \u00A0][—–-]{1,2}[ \u00A0]|[.,!?…]' \
                 r'[ \u00A0][—–-]{1,2}[ \u00A0]|:[ \u00A0]\n?«|' \
