@@ -1,7 +1,6 @@
 from .speech.quotes_processing import QuotesAdapter
 from .speech.speech_detector import SpeechDetector
 from .speech.file_reader import FileReader
-from .speech.sentiment_detector import SentimentDetector
 from .speech.verb_tagger import VerbTagger
 from .speech.pipeline import Pipeline
 from .speech.said_comment_tagger import SaidCommentTagger

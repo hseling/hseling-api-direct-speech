@@ -1,6 +1,8 @@
 import re
 from .step import PipelineStep
+from sentimental import Sentimental
 
+sent = Sentimental()
 
 class SaidCommentTagger(PipelineStep):
     SEPARATOR = r'»,?[ \u00A0][—–-]{1,2}[ \u00A0]|[.,!?…]' \
@@ -20,8 +22,11 @@ class SaidCommentTagger(PipelineStep):
         if lst[0]:
             order = self.__define_order(lst[0][0])
             for index, st in enumerate(lst):
-                st_with_tag = order[index % 2]['start'] + str(st) +\
-                              order[index % 2]['end']
+                tag = order[index % 2]['start']
+                if tag == "<said>":
+                    tag = tag.replace("<said>", "<said aloud='True' characteristic='{}' type='direct'>"
+                                      .format(self.__define_sentiment(str(st))))
+                st_with_tag = tag + str(st) + order[index % 2]['end']
                 annotation_result_list.append(st_with_tag)
         else:
             pass
@@ -42,6 +47,17 @@ class SaidCommentTagger(PipelineStep):
     def __get_speech(self, text):
         lst = re.findall(self.SPEECH, text)
         return lst
+
+    def __define_sentiment(self, said):
+        result = sent.analyze(said)
+        result = {'negative': result['negative'],
+                  'positive': result["positive"]}
+        if result['negative'] == result['positive']:
+            sentiment = 'neutral'
+        else:
+            sentiment = sorted(result.items(), key=lambda x: x[1],
+                               reverse=True)[0][0]
+        return sentiment
 
     def annotate(self, text):
         speech_list = self.__get_speech(text)
