@@ -20,10 +20,8 @@ def process_data(data):
         speech_detector = SpeechDetector("csv_files/speech.csv")
         said_comment_tagger = SaidCommentTagger()
         verb_tagger = VerbTagger("csv_files/verbs.csv")
-        sentiment_detector = SentimentDetector()
         pipeline = Pipeline(reader, quotes_adapter, speech_detector,
-                            said_comment_tagger, verb_tagger,
-                            sentiment_detector)
+                            said_comment_tagger, verb_tagger)
         result = pipeline.apply_to(text)
         file_id = file_id
     if result:
