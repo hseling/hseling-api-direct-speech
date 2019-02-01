@@ -25,8 +25,9 @@ class PipelineStep:
     def read_dict_csv(self, path, sep):
         template = os.path.join(os.path.abspath(
             os.path.dirname(os.path.dirname(__file__))), path)
-        return csv.DictReader(open(template, "r", encoding='utf-8-sig'),
+        reader = csv.DictReader(open(template, "r", encoding='utf-8-sig'),
                               delimiter=sep)
+        return list(reader)
 
     def read_xml(self, text):
         return BeautifulSoup('<text>' + text + '</text>', "lxml")

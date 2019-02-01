@@ -18,16 +18,16 @@ class SaidCommentTagger(PipelineStep):
         super().__init__()
 
     def __said_comment(self, string):
-        lst = re.split(self.SEPARATOR, string)
+        lst = re.split("("+self.SEPARATOR+")", string)
         annotation_result_list = []
         if lst[0]:
             order = self.__define_order(lst[0][0])
             for index, st in enumerate(lst):
-                tag = order[index % 2]['start']
+                tag = order[index % 3]['start']
                 if tag == "<said>":
                     tag = tag.replace("<said>", "<said aloud='True' characteristic='{}' type='direct'>"
                                       .format(self.__define_sentiment(str(st))))
-                st_with_tag = tag + str(st) + order[index % 2]['end']
+                st_with_tag = tag + str(st) + order[index % 3]['end']
                 annotation_result_list.append(st_with_tag)
         else:
             pass
@@ -37,11 +37,15 @@ class SaidCommentTagger(PipelineStep):
         if first_symbol in self.FIRST_IN_SAID:
             return [{"start": '<{}>'.format(self.SAID),
                      "end": '</{}>'.format(self.SAID)},
+                    {"start": '',
+                     "end": ''},
                     {"start": '<{}>'.format(self.AUTHOR_COMMENT),
                      "end": '</{}>'.format(self.AUTHOR_COMMENT)}]
         else:
             return [{"start": '<{}>'.format(self.AUTHOR_COMMENT),
                      "end": '</{}>'.format(self.AUTHOR_COMMENT)},
+                    {"start": '',
+                     "end": ''},
                     {"start": '<{}>'.format(self.SAID),
                      "end": '</{}>'.format(self.SAID)}]
 
