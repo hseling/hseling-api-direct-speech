@@ -25,7 +25,8 @@ class SaidCommentTagger(PipelineStep):
             for index, st in enumerate(lst):
                 tag = order[index % 3]['start']
                 if tag == "<said>":
-                    tag = tag.replace("<said>", "<said aloud='True' characteristic='{}' type='direct'>"
+                    tag = tag.replace("<said>",
+                                      "<said aloud='True' characteristic='{}' type='direct'>"
                                       .format(self.__define_sentiment(str(st))))
                 st_with_tag = tag + str(st) + order[index % 3]['end']
                 annotation_result_list.append(st_with_tag)

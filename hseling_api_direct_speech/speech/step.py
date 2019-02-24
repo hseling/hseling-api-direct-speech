@@ -26,7 +26,7 @@ class PipelineStep:
         template = os.path.join(os.path.abspath(
             os.path.dirname(os.path.dirname(__file__))), path)
         reader = csv.DictReader(open(template, "r", encoding='utf-8-sig'),
-                              delimiter=sep)
+                                delimiter=sep)
         return list(reader)
 
     def read_xml(self, text):
