@@ -85,10 +85,10 @@ def with_minio(fn):
 def put_file(filename, contents, contents_length=None):
     if not isinstance(contents, BytesIO):
         if isinstance(contents, str):
-            contents_length = len(contents)
             contents = bytes(contents, encoding='utf-8')
         else:
             contents = bytes(contents)
+        contents_length = len(contents)
         contents = BytesIO(contents)
         if not contents_length:
             contents.seek(SEEK_END)
