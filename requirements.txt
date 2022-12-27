@@ -1,6 +1,7 @@
 flask
-redis
-celery[redis]
+redis==3.2.0
+kombu==4.2.0
+celery[redis]==4.1.1
 minio
 requests
 lxml
@@ -8,4 +9,4 @@ html5lib
 beautifulsoup4
 pymorphy2
 nltk
-git+git://github.com/text-machine-lab/sentimental.git#egg=sentimental
+git+https://github.com/text-machine-lab/sentimental.git

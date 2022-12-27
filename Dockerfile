@@ -7,7 +7,7 @@ COPY ./requirements.txt /dependencies/requirements.txt
 COPY ./setup.py /dependencies/setup.py
 COPY ./nltk_data /usr/local/nltk_data
 
-RUN apk add python3 git
+RUN apk add python3 git gcc linux-headers libc-dev musl-dev
 RUN pip install -r /dependencies/requirements.txt
 
 FROM hseling/hseling-api-base:python3.6-alpine3.7 as production
