@@ -1,7 +1,7 @@
 flask
-redis==3.2.0
-kombu==4.2.0
-celery[redis]==4.1.1
+redis>=3.4.1
+kombu>=5.1.0
+celery[redis]>=5.1.0
 minio
 requests
 lxml
